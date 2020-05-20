@@ -1,0 +1,624 @@
+.n_f_div{
+    width: 1206px;
+    margin: 0 auto;
+}
+.slideBox{ width:1206px; height:550px; 
+	overflow:hidden; position:relative;
+	/*padding: 50px;*/
+	  }
+.slideBox .hd{ height:15px; overflow:hidden; position:absolute; 
+	left:514px; bottom:40px; z-index:2; }
+.slideBox .hd ul{ 
+	overflow:hidden; zoom:1; float:left;
+	}
+.slideBox .hd ul li{ 
+	float:left; 
+	margin-right:20px; 
+	border-radius: 50%;
+ 	width:13px; height:13px; 
+ 	line-height:14px; text-align:center;
+  	background:#fff; cursor:pointer; }
+.slideBox .hd ul li.on{ 
+	width: 58px;height: 13px;
+	border-radius: 5px;
+	background:#3d92fd;
+	 }
+.slideBox .bd{ 
+	position:relative; 
+	height:100%; 
+	z-index:1;   
+	margin: 70px 60px 0 60px}
+.slideBox .bd li{ zoom:1; vertical-align:middle; }
+
+.slideBox .prev,
+.slideBox .next{ 
+	position:absolute;
+	left:10px;
+	top:240px;
+	display:block;
+	width:30px; 
+	height:60px;
+	background-position: center;
+	background-size: cover; 
+	background-image: url("../imgs/2020_f_left.png");  }
+.slideBox .next{ 
+	left:auto; right:10px; 
+	background-image: url("../imgs/2020_f_right.png"); }
+.item2-content{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.i-title{
+	text-align: center;
+	padding: 30px 0;
+	height: 150px;
+	margin: 0 auto;
+	text-align: center;
+}
+.i-title a img{
+	width: auto;
+	height: 100%;
+	line-height: 80px;
+	font-size: 40px;
+}
+/* 向总书记报告 */
+#item1Box{
+	background: url(../imgs/bgbg.png) no-repeat top center;
+	background-size: 1920px 100%;
+	padding-bottom: 50px;
+}
+#item1 .tuwen{
+	width: 660px;
+}
+#item1 .tuwen li{
+	float: left;
+	margin-right: 30px;
+	width: 300px;
+}
+#item1 .tuwen li a{
+	display: block;
+	width: 300px;
+	height: 190px;
+}
+#item1 .tuwen li p{
+	font-size: 18px;
+	line-height: 50px;
+	text-indent: 5px;
+	letter-spacing: 1px;
+}
+#item1 .list{
+	width: 520px;
+}
+#item1 .list li{
+	font-size: 18px;
+	line-height: 60px;
+	letter-spacing: 1px;
+	border-bottom: 1px solid #000;
+}
+#item1 .list li:hover a{
+	color: #e60012;
+}
+#item1 .list li:last-child{
+	border-bottom: 0;
+}
+/*  */
+.item2-content ul{
+	width: 510px;
+	padding: 0 30px;
+}
+.item2-content ul li{
+	padding: 10px 0;
+	border-bottom: 2px dashed #ddd;
+}
+.item2-content ul li a{
+	display: block;
+	width: 510px;
+	height:100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.item2-content ul li .item2-img{
+	width: 110px;
+}
+.item2-content ul li .item2-body{
+	width: 380px;
+}
+.item2-content ul li img{
+	width: 110px;
+	height: 75px;
+}
+.item2-title{
+	display: block;
+	color: #5f6466;
+	font-size: 18px;
+	font-weight: 500;
+}
+.item2-intro{
+	display: block;
+	margin-top: 5px;
+	color: #000000;
+	font-size: 14px;
+	text-indent:2em
+}
+/* item3-两会v视角 */
+#item3{
+	width: 1360px;
+	height: 690px;
+	background: url(../imgs/phone.png) no-repeat;
+	background-size: 100% 100%;
+}
+#item3 #carousel {
+	position: relative;
+	z-index: 2;
+	height: 200px;
+	padding-top: 200px;
+	transform-style: preserve-3d;
+	perspective: 800px;
+}
+#item3 #carousel img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 300px;
+	height: 200px;
+	margin-left: -150px;
+	margin-top: -100px;
+	border-radius: 8px;
+	transition: transform 0.5s ease-in-out;
+}
+#item3 .news{
+	width: 1020px;
+	margin: 40px auto 0;
+}
+#item3 .news li{
+	width: 460px;
+	float: left;
+	font-size: 18px;
+	line-height: 44px;
+	letter-spacing: 1px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#item3 .news li:hover a{
+	color: #e60012;
+}
+#item3 .news li:nth-child(2n+1){
+	margin-right: 100px;
+}
+/*  */
+.item4-list{
+	width: 270px;
+	height: 400px;
+	float: left;
+}
+.item4-list a{
+	display: block;
+	height: 200px;
+}
+.item4-list .top_0,.item4-list .top_1{
+	width: 270px;
+	height: 200px;
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.item4-list .bottom_0,.item4-list .bottom_1{
+	width: 270px;
+	height: 230px;
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.item4-list .bottom_0{
+	margin-top: -31px;
+}
+.item4-list .item4-body{
+	height: 230px;
+}
+.item4-list .item4-title{
+	display:block;
+    padding-top: 70px;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+.item4-list .item4-intro{
+	display:block;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.item4-list1 .item4-title,.item4-list1 .item4-intro{
+	color: #ff3e32;
+}
+.item4-list1 .item4-title{
+	padding-top: 40px
+}
+.item4-list1{
+	position: relative;
+}
+.item4-list1 a{
+	z-index: 10;
+	position: absolute;
+	margin-top: 199px;
+}
+.item4-list1 .item4-body{
+	z-index: 100;
+	margin-top: 0;
+}
+#item5Box{
+	margin-top: 20px;
+	padding-bottom: 40px;
+	background-image: linear-gradient(
+		#bfdcff, 
+		#bfdcff), 
+	linear-gradient(
+		#bfcae0, 
+		#bfcae0);
+}
+.item5-content{
+	margin-top: 20px;
+}
+.item5-content li{
+	width: 500px;
+	margin:10px 50px;
+	float: left;
+	height: 110px;
+	border-bottom: 1px dashed black;
+}
+.item5-content li a:hover{
+	color: #e60012;
+}
+.item5-content li .item5-title{
+	display: block;
+	font-size: 22px;
+	font-weight: 500;
+}
+.item5-content li .item5-intro{
+	display: block;
+	font-size: 14px;
+	margin-top: 10px;
+}
+/* item6-两会话脱贫 */
+#carousel1 {
+	width:960px;
+	height:400px;
+	overflow:hidden;
+	position:relative;
+	margin:0 auto;
+	margin-top: -70px;
+}
+#carousel1 img {
+	border:none;
+	width:240px;
+	height:180px;
+	border:solid 1px #000;
+}
+#carousel1 #user-c {
+	padding:0;
+	position:absolute;
+	right:15px;
+	bottom:10px;
+}
+#carousel1 .carouselLeft, #carousel1 .carouselRight {
+	position:absolute;
+	bottom:20px;
+	width:29px;
+	height:30px;
+	overflow:hidden;
+	cursor:pointer;
+	z-index: 999;
+}
+#carousel1 .carouselLeft {
+	right:100px;
+	background:url(../imgs/templatemo_slider_right.png) no-repeat;
+	/* background-position: right bottom; */
+	/* padding: 220px 0 0 220px; */
+}
+#carousel1 .carouselRight {
+	left:100px;
+	background:url(../imgs/templatemo_slider_left.png) no-repeat;
+	/* background-position: left bottom; */
+	/* padding: 220px 220px 0 0; */
+}
+#carousel1 #but11{
+	position: absolute;
+	bottom: 82px;
+	left: 64px;
+	width: 242px;
+	height: 182px;
+	z-index: 1000;
+}
+#carousel1 #but22{
+	position: absolute;
+	right: 104px;
+	bottom: 82px;
+	width: 242px;
+	height: 182px;
+	z-index: 1000;
+}
+#item6 .news{
+	width: 1136px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+#item6 .news li{
+	width: 528px;
+	float: left;
+	border-bottom: 1px solid #000;
+	font-size: 18px;
+	line-height: 55px;
+	letter-spacing: 1px;
+}
+#item6 .news li:hover a{
+	color: #e60012;
+}
+#item6 .news li:nth-child(2n-1){
+	margin-right: 80px;
+}
+/* 两会说就业 */
+#item7 .news{
+	width: 1150px;
+	margin: 0 auto;
+}
+#item7 li{
+	height: 200px;
+	background: #e6e6e6;
+	padding: 18px 38px 18px 15px;
+	box-sizing: border-box;
+	margin-bottom: 16px;
+}
+#item7 li .preImg{
+	display: block;
+	width: 244px;
+	height: 162px;
+	margin-right: 20px;
+}
+#item7 li .title{
+	display: block;
+	font-size: 22px;
+	line-height: 40px;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+}
+#item7 li .title:hover{
+	color: #e60012;
+}
+#item7 li p{
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 1px;
+	color: #8a8888;
+	height: 72px;
+	-webkit-line-clamp:3; 
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+/* 头部 */
+.header, .theNum, .theRefer, .theTitle, .dayList{
+	opacity: 0;
+}
+.header{
+	background: url(../imgs/headbg.png) no-repeat;
+	background-size: 1920px 100%;
+	background-position: top center;
+	padding: 30px 0 60px;
+	overflow: hidden;
+}
+.header .name{
+	width: 400px;
+	margin: 0 auto;
+	margin: 136px 0 10px;
+}
+.header .name img{
+	width: 132px;
+	height: 64px;
+}
+.header .name p{
+	display: inline-block;
+	width: 248px;
+	height: 50px;
+	font-size: 21px;
+	line-height: 24px;
+	letter-spacing: 1px;
+	color: #e60012;
+	padding: 10px;
+}
+.header .title{
+	position: relative;
+	padding-bottom: 120px;
+}
+.header .title .theTitle{
+	display: block;
+	width: 885px;
+	height: 250px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+.header .title .theScarf{
+	top: -134px;
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	z-index: 1;
+	background: url(../imgs/piaohong.png) no-repeat center top;
+	background-size: 1920px 400px;
+}
+/* 两会日程 */
+.dayList{
+	padding: 20px 25px 44px;
+	box-sizing: border-box;
+	width: 1260px;
+	margin: 0 auto;
+	background: #fff;
+	box-shadow: 3px 4px 0px 0px 
+		rgba(0, 0, 0, 0.15);
+}
+.dayList #mainSlide{
+	width: 1206px;
+	margin: 0 auto;
+}
+.dayList #mainSlide .nav{
+	background-image: linear-gradient(
+		#bfdcff, 
+		#bfdcff), 
+	linear-gradient(
+		#d2d2d2, 
+		#d2d2d2);
+}
+.dayList #mainSlide .nav .riliTitle{
+	width: 224px;
+	height: 94px;
+	background: url('../imgs/rc.png') no-repeat;
+	background-size: 100% 100%;
+	font-size: 35px;
+	line-height: 92px;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #ffffff;
+	margin: -30px 150px 0 30px;
+}
+.dayList #mainSlide .nav .month{
+	font-size: 36px;
+	line-height: 95px;
+	letter-spacing: -2px;
+	color: #e60012;
+}
+.dayList #mainSlide .hd{
+	width: 60%;
+	height: 95px;
+	position: relative;
+	padding: 0 3.5%;
+	box-sizing: border-box;
+}
+.dayList #mainSlide .hd .btn{
+	width: 5%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+.dayList #mainSlide .hd .sPrev{
+	left: 0;
+	background: url(../imgs/prev.png) no-repeat center;
+}
+.dayList #mainSlide .hd .sNext{
+	right: 0;
+	background: url(../imgs/next.png) no-repeat center;
+}
+.dayList #mainSlide .hd .tempWrap{
+	margin-top: 6px;
+}
+.dayList #mainSlide .hd ul{
+	position: relative;
+}
+.dayList #mainSlide .hd ul li{
+	float: left;
+	margin: 0 5px;
+	width: 82px;
+	height: 82px;
+	line-height: 82px;
+	text-align: center;
+	background: #fff;
+	border-radius: 50%;
+	font-size: 32px;
+	font-weight: normal;
+	letter-spacing: -2px;
+	color: #e60012;
+}
+.dayList #mainSlide .hd ul li.on{
+	color: #fff;
+	background: #e60012;
+}
+.dayList #mainSlide .eachItem .newsTitle{
+	font-size: 36px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #e60012;
+	padding: 38px 0;
+}
+.dayList #mainSlide .eachItem .newsHd{
+	width: 40%;
+}
+.dayList #mainSlide .eachItem .newsHd li{
+	font-size: 17px;
+	line-height: 46px;
+	letter-spacing: 1px;
+	border-bottom: 1px solid #959595;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.dayList #mainSlide .eachItem .newsHd li a{
+	color: #000;
+}
+.dayList #mainSlide .eachItem .newsHd li:nth-child(4n+1) a{
+	font-size: 21px;
+	color: #e60012;
+}
+/* 内部轮播 */
+.dayList .innerSlide{
+	width: 650px;
+	height: 380px;
+	position: relative;
+}
+.dayList .innerSlide .shd{
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 224px;
+}
+.dayList .innerSlide .shd li{
+	width: 16px;
+	height: 16px;
+	margin: 0 20px;
+	background: #bfbfbf;
+	float: left;
+	border-radius: 50%;
+}
+.dayList .innerSlide .shd li.on{
+	background: #e60012;
+}
+.dayList .innerSlide .sbd li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.dayList .innerSlide .sbd li img{
+	width: 100%;
+	height: 380px;
+}
+.dayList .innerSlide .sbd li p{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: rgba(255,0,0,.6);
+	width: 100%;
+	font-size: 22px;
+	line-height: 62px;
+	letter-spacing: 1px;
+	color: #fff;
+	text-indent: 1em;
+}
+
+/* 页脚 */
+.footer{
+	padding: 50px 0 80px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 1px;
+}

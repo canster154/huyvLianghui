@@ -1,0 +1,79 @@
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after{
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+}
+.img100{
+    width: 100%;
+    height: 100%;
+}
+.bgBox, .theNum, .theRefer, .theTitle, .theScarf{
+    opacity: 0;
+}
+.bgBox{
+    background: url(../imgs/headBgL.png) no-repeat;
+    background-size: 1920px auto;
+    background-position: center top;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.bgBox~*{
+    opacity: 0;
+}
+.headBox .name{
+    width: 363px;
+    margin: 0 auto;
+    padding: 42px 0 10px;
+}
+.headBox .name .theNum{
+    width: 132px;
+    height: 64px;
+}
+.headBox .name p{
+	display: inline-block;width: 211px;
+	height: 43px;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 1px;
+    color: #e60012;
+    padding: 10px;
+}
+.headBox .title{
+    display: block;
+    position: relative;
+    margin-bottom: 40px;
+}
+.headBox .title .theTitle{
+    display: block;
+	width: 812px;
+	height: 200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.headBox .title .theScarf{
+	top: -134px;
+	width: 100%;
+	height: 388px;
+	position: absolute;
+	z-index: 1;
+	background: url(../imgs/piaohong.png) no-repeat center top;
+	background-size: 1920px 388px;
+}
+
+
+body{
+    background: transparent;
+    position: relative;
+}

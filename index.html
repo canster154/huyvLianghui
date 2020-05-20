@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020年全国两会</title>
+    <link rel="stylesheet" href="${site.url}2020lianghui/css/global.css">
+    <link rel="stylesheet" href="${site.url}2020lianghui/css/index.css">
+</head>
+
+<body>
+</body>
+    <div class="header">
+        <div class="name clearfix container">
+          <img class="fl theNum" src="${site.url}2020lianghui/imgs/huizhang.png">
+          <p class="fl theRefer">十三届全国人大三次会议全国政协十三届三次会议</p>
+        </div>
+        <div class="title">
+            <img class="img100 theTitle" src="${site.url}2020lianghui/imgs/title.png" alt="">
+            <div class="theScarf"></div>
+        </div>
+        <!-- <div class="name clearfix container">
+            <span class="fl theNum">2020</span>
+            <p class="fl theRefer">十三届全国人大三次会议全国政协十三届三次会议</p>
+        </div>
+        <div class="title theTitle">
+            <img class="img100" src="${site.url}2020lianghui/imgs/jjqglh.png" alt="">
+        </div> -->
+        <!-- 两会日程 -->
+        <div class="dayList">
+            <div id="mainSlide">
+                <div class="nav clearfix">
+                    <div class="riliTitle fl"></div>
+                    <div class="month fl">5月</div>
+                    <div class="hd fr clearfix">
+                        <a href="javascript:void(0);" class="sPrev btn"></a>
+                        <ul class="clearfix">
+                            <li>20日</li>
+                            <li>21日</li>
+                            <li>22日</li>
+                            <li>23日</li>
+                            <li>24日</li>
+                            <li>25日</li>
+                            <li>26日</li>
+                            <li>27日</li>
+                            <li>28日</li>
+                        </ul>
+                        <a href="javascript:void(0);" class="sNext btn"></a>
+                    </div>
+                </div>
+                <div class="bd">
+                    <cms:list item="catalog" name="111693">
+                        <ul class="eachDay clearfix">
+                            <li class="eachItem">
+                                <cms:sublist item="article" name="${catalog.id}" count="1">
+                                    <a target="_blank" href="${article.link}"><p class="newsTitle">${article.title}</p></a>
+                                </cms:sublist>
+                                <ul class="newsHd fl">
+                                    <cms:sublist item="article" name="${catalog.id}" count="8" begin="1">
+                                        <li><a target="_blank"  href="${article.link}">${article.title}</a></li>
+                                    </cms:sublist>
+                                </ul>
+                                <div id="innerSlide" class="innerSlide fr">
+                                    <ul class="shd clearfix">
+                                        <cms:sublist item="article" name="${catalog.id}" count="4">
+                                            <li></li>
+                                        </cms:sublist>
+                                    </ul>
+                                    <ul class="sbd">
+                                        <cms:sublist item="article" name="${catalog.id}" count="4">
+                                            <li>
+                                                <a target="_blank"  href="${article.link}">
+                                                    <img src="${level}${article.logo}" alt="">
+                                                    <p class="oneLine">${article.title}</p>
+                                                </a>
+                                            </li>
+                                        </cms:sublist>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </cms:list>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 向总书记报告 -->
+    <div id="item1Box">
+        <div class="n_f_div" id="item1">
+            <div class="i-title">
+                <cms:var type="catalog" name="111694">
+                    <a target="_blank"  href="${catalog.link}"  ><img src="${site.url}2020lianghui/imgs/xzsjbg.png" alt=""></a>
+                </cms:var>
+            </div>
+            <div class="item1-content clearfix">
+                <ul class="tuwen fl clearfix">
+                    <cms:list item="article" name="111694" count="4">
+                        <li>
+                            <a target="_blank"  href="${article.link}">
+                                <img class="img100" src="${level}${article.logo}" alt="">
+                            </a>
+                            <p class="oneLine">${article.title}</p>
+                        </li>
+                    </cms:list>
+                </ul>
+                <ul class="list fr">
+                    <cms:list item="article" name="111694" count="8" begin="4">
+                        <li class="oneLine"><a target="_blank"  href="${article.link}">${article.title}</a></li>
+                    </cms:list>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 众志成城的力量 -->
+    <div class="n_f_div" id="item2">
+        <div class="i-title">
+            <cms:var type="catalog" name="111695">
+                <a target="_blank"  href="${catalog.link}"  ><img src="${site.url}2020lianghui/imgs/zzccdll.png" alt=""></a>
+            </cms:var>
+        </div>
+        <div class="item2-content">
+            <ul>
+                <cms:list item="article" name="111695" count="3">
+                    <li>
+                        <a target="_blank"  href="${article.link}"  >
+                        <div class="item2-img">
+                            <img src="${level}${article.logo}">
+                        </div>
+                        <div class="item2-body">
+                            <span class="item2-title">${article.title|charWidth=30}</span>
+                            <span class="item2-intro">${article.summary|charWidth=40}</span>
+                        </div>
+                      </a>
+                    </li>
+                </cms:list>
+            </ul>
+            <ul>
+                <cms:list item="article" name="111695" count="3" begin="3">
+                    <li>
+                        <a target="_blank"  href="${article.link}"  >
+                        <div class="item2-img">
+                            <img src="${level}${article.logo}">
+                        </div>
+                        <div class="item2-body">
+                            <span class="item2-title">${article.title|charWidth=30}</span>
+                            <span class="item2-intro">${article.summary|charWidth=40}</span>
+                        </div>
+                      </a>
+                    </li>
+                </cms:list>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 两会云视角 -->
+    <div id="item3Box">
+        <div class="i-title">
+            <cms:var type="catalog" name="111696">
+                <a target="_blank"  href="${catalog.link}"  ><img src="${site.url}2020lianghui/imgs/lhysj.png" alt=""></a>
+            </cms:var>
+        </div>
+        <div class="n_f_div" id="item3">
+            <div id="carousel">
+                <cms:list item="article" name="111696" count="5">
+                    <img src="${level}${article.logo}" alt="#">
+                </cms:list>
+            </div>
+            <ul class="news clearfix">
+                <cms:list item="article" name="111696" count="8">
+                    <li><a target="_blank"  href="${article.link}">${article.title}</a></li>
+                </cms:list>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 两会云通道 -->
+    <div class="i-title">
+        <cms:var type="catalog" name="111697">
+            <a target="_blank"  href="${catalog.link}"  ><img src="${site.url}2020lianghui/imgs/lhytd.png" alt=""></a>
+        </cms:var>
+    </div>
+    <div style="height: 550px;background-color: #ec4a3d;opacity: 0.9;margin: 0 auto;max-width: 1920px;">
+        <div class="n_f_div" style="height: 550px">
+            <div class="item4-content">
+                <div id="slideBox" class="slideBox">
+                    <div class="hd">
+                        <ul>
+                            <li class=""></li>
+                            <li class=""></li>
+                            <li class=""></li>
+                            <li class=""></li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <ul>
+                          <li>
+                            <cms:list item="article"  name="111697" count="1" begin="0">
+                              <div class="item4-list">
+                                <a target="_blank"  href="${article.link}"  ><div class="top_0" style="background-image: url('${level}${article.logo}')"></div></a>
+                                <a target="_blank"  href="${article.link}"   class="item4-body">
+                                  <div class="bottom_0" style="background-image: url(public/dest/imgs/2019_blue.png)">
+                                    <span class="item4-title">${article.title|charWidth=9}</span>
+                                    <span class="item4-intro">${article.summary|charWidth=46}</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </cms:list>
+                            <cms:list item="article"  name="111697" count="1" begin="1">
+                              <div class="item4-list item4-list1">
+                                <a target="_blank"  href="${article.link}"   class="item4-body">
+                                  <div class="bottom_1" style="background-image: url(public/dest/imgs/2019_white.png)">
+                                    <span class="item4-title">${article.title|charWidth=9}</span>
+                                    <span class="item4-intro">${article.summary|charWidth=46}</span>
+                                  </div>
+                                </a>
+                                <a target="_blank"  href="${article.link}"  ><div class="top_1" style="background-image: url('${level}${article.logo}')"></div></a>
+                              </div>
+                            </cms:list>
+                            <cms:list item="article"  name="111697" count="1" begin="2">
+                              <div class="item4-list">
+                                <a target="_blank"  href="${article.link}"  ><div class="top_0" style="background-image: url('${level}${article.logo}')"></div></a>
+                                <a target="_blank"  href="${article.link}"   class="item4-body">
+                                  <div class="bottom_0" style="background-image: url(public/dest/imgs/2019_blue.png)">
+                                    <span class="item4-title">${article.title|charWidth=9}</span>
+                                    <span class="item4-intro">${article.summary|charWidth=46}</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </cms:list>
+                            <cms:list item="article"  name="111697" count="1" begin="3">
+                              <div class="item4-list item4-list1">
+                                <a target="_blank"  href="${article.link}"   class="item4-body">
+                                  <div class="bottom_1" style="background-image: url(public/dest/imgs/2019_white.png)">
+                                    <span class="item4-title">${article.title|charWidth=9}</span>
+                                    <span class="item4-intro">${article.summary|charWidth=46}</span>
+                                  </div>
+                                </a>
+                                <a target="_blank"  href="${article.link}"  ><div class="top_1" style="background-image: url('${level}${article.logo}')"></div></a>
+                              </div>
+                            </cms:list>
+                          </li>
+                          <li>
+                            <cms:list item="article"  name="111697" count="1" begin="4">
+                              <div class="item4-list">
+                                <a target="_blank"  href="${article.link}"  ><div class="top_0" style="background-image: url('${level}${article.logo}')"></div></a>
+                                <a target="_blank"  href="${article.link}"   class="item4-body">
+                                  <div class="bottom_0" style="background-image: url(public/dest/imgs/2019_blue.png)">
+                                    <span class="item4-title">${article.title|charWidth=9}</span>
+                                    <span class="item4-intro">${article.summary|charWidth=46}</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </cms:list>
+                            <cms:list item="article"  name="111697" count="1" begin="5">
+                              <div class="item4-list item4-list1">
+                                <a target="_blank"  href="${article.link}"   class="item4-body">
+                                  <div class="bottom_1" style="background-image: url(public/dest/imgs/2019_white.png)">
+                                    <span class="item4-title">${article.title|charWidth=9}</span>
+                                    <span class="item4-intro">${article.summary|charWidth=46}</span>
+                                  </div>
+                                </a>
+                                <a target="_blank"  href="${article.link}"  ><div class="top_1" style="background-image: url('${level}${article.logo}')"></div></a>
+                              </div>
+                            </cms:list>
+                            <cms:list item="article"  name="111697" count="1" begin="6">
+                              <div class="item4-list">
+                                <a target="_blank"  href="${article.link}"  ><div class="top_0" style="background-image: url('${level}${article.logo}')"></div></a>
+                                <a target="_blank"  href="${article.link}"   class="item4-body">
+                                  <div class="bottom_0" style="background-image: url(public/dest/imgs/2019_blue.png)">
+                                    <span class="item4-title">${article.title|charWidth=9}</span>
+                                    <span class="item4-intro">${article.summary|charWidth=46}</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </cms:list>
+                            <cms:list item="article"  name="111697" count="1" begin="7">
+                              <div class="item4-list item4-list1">
+                                <a target="_blank"  href="${article.link}"   class="item4-body">
+                                  <div class="bottom_1" style="background-image: url(public/dest/imgs/2019_white.png)">
+                                    <span class="item4-title">${article.title|charWidth=9}</span>
+                                    <span class="item4-intro">${article.summary|charWidth=46}</span>
+                                  </div>
+                                </a>
+                                <a target="_blank"  href="${article.link}"  ><div class="top_1" style="background-image: url('${level}${article.logo}')"></div></a>
+                              </div>
+                            </cms:list>
+                          </li>
+                          <li>
+                            <cms:list item="article"  name="111697" count="1" begin="8">
+                              <div class="item4-list">
+                                <a target="_blank"  href="${article.link}"  ><div class="top_0" style="background-image: url('${level}${article.logo}')"></div></a>
+                                <a target="_blank"  href="${article.link}"   class="item4-body">
+                                  <div class="bottom_0" style="background-image: url(public/dest/imgs/2019_blue.png)">
+                                    <span class="item4-title">${article.title|charWidth=9}</span>
+                                    <span class="item4-intro">${article.summary|charWidth=46}</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </cms:list>
+                            <cms:list item="article"  name="111697" count="1" begin="9">
+                              <div class="item4-list item4-list1">
+                                <a target="_blank"  href="${article.link}"   class="item4-body">
+                                  <div class="bottom_1" style="background-image: url(public/dest/imgs/2019_white.png)">
+                                    <span class="item4-title">${article.title|charWidth=9}</span>
+                                    <span class="item4-intro">${article.summary|charWidth=46}</span>
+                                  </div>
+                                </a>
+                                <a target="_blank"  href="${article.link}"  ><div class="top_1" style="background-image: url('${level}${article.logo}')"></div></a>
+                              </div>
+                            </cms:list>
+                            <cms:list item="article"  name="111697" count="1" begin="10">
+                              <div class="item4-list">
+                                <a target="_blank"  href="${article.link}"  ><div class="top_0" style="background-image: url('${level}${article.logo}')"></div></a>
+                                <a target="_blank"  href="${article.link}"   class="item4-body">
+                                  <div class="bottom_0" style="background-image: url(public/dest/imgs/2019_blue.png)">
+                                    <span class="item4-title">${article.title|charWidth=9}</span>
+                                    <span class="item4-intro">${article.summary|charWidth=46}</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </cms:list>
+                            <cms:list item="article"  name="111697" count="1" begin="11">
+                              <div class="item4-list item4-list1">
+                                <a target="_blank"  href="${article.link}"   class="item4-body">
+                                  <div class="bottom_1" style="background-image: url(public/dest/imgs/2019_white.png)">
+                                    <span class="item4-title">${article.title|charWidth=9}</span>
+                                    <span class="item4-intro">${article.summary|charWidth=46}</span>
+                                  </div>
+                                </a>
+                                <a target="_blank"  href="${article.link}"  ><div class="top_1" style="background-image: url('${level}${article.logo}')"></div></a>
+                              </div>
+                            </cms:list>
+                          </li>
+                          <li>
+                            <cms:list item="article"  name="111697" count="1" begin="12">
+                              <div class="item4-list">
+                                <a target="_blank"  href="${article.link}"  ><div class="top_0" style="background-image: url('${level}${article.logo}')"></div></a>
+                                <a target="_blank"  href="${article.link}"   class="item4-body">
+                                  <div class="bottom_0" style="background-image: url(public/dest/imgs/2019_blue.png)">
+                                    <span class="item4-title">${article.title|charWidth=9}</span>
+                                    <span class="item4-intro">${article.summary|charWidth=46}</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </cms:list>
+                            <cms:list item="article"  name="111697" count="1" begin="13">
+                              <div class="item4-list item4-list1">
+                                <a target="_blank"  href="${article.link}"   class="item4-body">
+                                  <div class="bottom_1" style="background-image: url(public/dest/imgs/2019_white.png)">
+                                    <span class="item4-title">${article.title|charWidth=9}</span>
+                                    <span class="item4-intro">${article.summary|charWidth=46}</span>
+                                  </div>
+                                </a>
+                                <a target="_blank"  href="${article.link}"  ><div class="top_1" style="background-image: url('${level}${article.logo}')"></div></a>
+                              </div>
+                            </cms:list>
+                            <cms:list item="article"  name="111697" count="1" begin="14">
+                              <div class="item4-list">
+                                <a target="_blank"  href="${article.link}"  ><div class="top_0" style="background-image: url('${level}${article.logo}')"></div></a>
+                                <a target="_blank"  href="${article.link}"   class="item4-body">
+                                  <div class="bottom_0" style="background-image: url(public/dest/imgs/2019_blue.png)">
+                                    <span class="item4-title">${article.title|charWidth=9}</span>
+                                    <span class="item4-intro">${article.summary|charWidth=46}</span>
+                                  </div>
+                                </a>
+                              </div>
+                            </cms:list>
+                            <cms:list item="article"  name="111697" count="1" begin="15">
+                              <div class="item4-list item4-list1">
+                                <a target="_blank"  href="${article.link}"   class="item4-body">
+                                  <div class="bottom_1" style="background-image: url(public/dest/imgs/2019_white.png)">
+                                    <span class="item4-title">${article.title|charWidth=9}</span>
+                                    <span class="item4-intro">${article.summary|charWidth=46}</span>
+                                  </div>
+                                </a>
+                                <a target="_blank"  href="${article.link}"  ><div class="top_1" style="background-image: url('${level}${article.logo}')"></div></a>
+                              </div>
+                            </cms:list>
+                          </li>
+                        </ul> 
+                    </div>
+                    <a class="prev" href="javascript:void(0)"></a>
+                    <a class="next" href="javascript:void(0)"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 两会云观察-样式同两会谈经济 -->
+    <div class="n_f_div" id="item5">
+      <div class="i-title">
+          <cms:var type="catalog" name="111734">
+              <a target="_blank"  href="${catalog.link}"  ><img src="${site.url}2020lianghui/imgs/lhygc.png" alt=""></a>
+          </cms:var>
+      </div>
+      <div class="item5-content">
+          <ul class="clearfix">
+              <cms:list item="article"  name="111734" count="6">
+                  <li>
+                      <a target="_blank"  href="${article.link}">
+                          <span class="item5-title">
+                              ${article.Title|charWidth=20}
+                          </span>
+                          <span class="item5-intro">
+                              ${article.summary|charWidth=70}
+                          </span>
+                      </a>
+                  </li>
+              </cms:list>
+          </ul>
+      </div>
+    </div>
+
+    <!-- 两会话脱贫 -->
+    <div class="n_f_div" id="item6">
+        <div class="i-title">
+            <cms:var type="catalog" name="111698">
+                <a target="_blank"  href="${catalog.link}"  ><img src="${site.url}2020lianghui/imgs/lhhtp.png" alt=""></a>
+            </cms:var>
+        </div>
+        <div class="item6-content">
+            <div id="carousel1">
+                <p id="title-text"></p>
+                <p id="alt-text"></p>
+                <cms:list item="article" name="111698" count="8">
+                    <a target="_blank"    ><img class="cloudcarousel"  src="${level}${article.logo}"/></a> 
+                </cms:list>
+                <div id="but1" class="carouselLeft but1"></div>
+                <div id="but11" class="but1"></div>
+                <div id="but2" class="carouselRight but2"></div>
+                <div id="but22" class="but2"></div>
+            </div>
+        </div>
+        <ul class="news clearfix">
+            <cms:list item="article" name="111698" count="6">
+                <li class="oneLine"><a target="_blank"  href="${article.link}">${article.title}</a></li>
+            </cms:list>
+        </ul>
+    </div>
+
+    <!-- 两会谈经济 -->
+    <div id="item5Box">
+        <div class="n_f_div" id="item5">
+            <div class="i-title">
+                <cms:var type="catalog" name="111699">
+                    <a target="_blank"  href="${catalog.link}"  ><img src="${site.url}2020lianghui/imgs/lhhjj.png" alt=""></a>
+                </cms:var>
+            </div>
+            <div class="item5-content">
+                <ul class="clearfix">
+                    <cms:list item="article"  name="111699" count="6">
+                        <li>
+                            <a target="_blank"  href="${article.link}">
+                                <span class="item5-title">
+                                    ${article.Title|charWidth=20}
+                                </span>
+                                <span class="item5-intro">
+                                    ${article.summary|charWidth=70}
+                                </span>
+                            </a>
+                        </li>
+                    </cms:list>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 两会说就业 -->
+    <div class="n_f_div" id="item7">
+        <div class="i-title">
+            <cms:var type="catalog" name="111700">
+                <a target="_blank"  href="${catalog.link}"  ><img src="${site.url}2020lianghui/imgs/lhsjy.png" alt=""></a>
+            </cms:var>
+        </div>
+        <ul class="news">
+            <cms:list item="article"  name="111700" count="3">
+                <li class="clearfix">
+                    <a target="_blank"  href="${article.link}" class="preImg fl">
+                        <img class="img100" src="${level}${article.logo}" alt="">
+                    </a>
+                    <a target="_blank"  href="${article.link}" class="title oneLine">${article.title}</a>
+                    <p>${article.summary}</p>
+                </li>
+            </cms:list>
+        </ul>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <p></p>
+        <p>新疆广播电视台</p>
+        <p>
+            <a target="_blank"  href="">联系我们</a> | 
+            <a target="_blank"  href="">关于我们</a> | 
+            <a target="_blank"  href="">版权声明</a> | 
+            <a target="_blank"  href="">广告服务</a> 
+            中国新疆电视台版权所有 Copyright 2004-2008, All Rights Reserved</p>
+           <p>新ICP备10200192号 信息网络传播视听节目许可证号 3105132</p>
+    </div>
+
+
+    <script src="${site.url}2020lianghui/js/jquery-3.1.1.min.js"></script>
+    <script src="${site.url}2020lianghui/js/jquery.SuperSlide.2.1.3.js"></script>
+    <script src="${site.url}2020lianghui/js/carousel.js"></script>
+    <script src="${site.url}2020lianghui/js/CloudCarousel.1.0.5.js"></script>
+    <script src="${site.url}2020lianghui/js/max.js"></script>
+    <script>
+        jQuery("#slideBox").slide({ mainCell: ".bd ul", autoPlay: true });
+        jQuery(".innerSlide").slide({ titCell:".shd li", mainCell: ".sbd", autoPlay: true });
+
+
+        //大图和文字切换
+        jQuery("#mainSlide").slide({ titCell:".hd li", mainCell:".bd", autoPlay:false,delayTime:100,startFun:function(i,p){
+            //控制小图自动翻页
+            // if(i==0){ jQuery("#mainSlide .sPrev").click() } else if( i%3==0 ){ jQuery("#mainSlide .sNext").click()}
+            }
+        });
+        //小图滚动
+        jQuery("#mainSlide .hd").slide({ mainCell:"ul",prevCell:".sPrev",nextCell:".sNext",effect:"left",vis:7,scroll:7,delayTime:0,autoPage:true,pnLoop:false});
+
+        // 旋转1
+        $(function () {
+            $('#carousel').carousel({ curDisplay: 0, autoPlay: true, interval: 3000 });
+        });
+
+        // 旋转2
+        $(document).ready(function(){						   
+            // 这初始化容器中指定的元素，在这种情况下，旋转木马.
+            $("#carousel1").CloudCarousel({			
+                xPos:450,
+                yPos:110,
+                buttonLeft: $('.but1'),
+                buttonRight: $('.but2'),
+                altBox: $("#alt-text"),
+                titleBox: $("#title-text"),				
+                FPS:30,
+                reflHeight:86,
+                reflGap:2,
+                yRadius:40,
+                autoRotateDelay: 1200,
+                speed:0.2,
+                mouseWheel:false,
+                bringToFront:true
+            });	
+        });
+    </script>
+
+
+    <script src="${site.url}2020lianghui/js/use.js"></script>
+</body>
+
+</html>

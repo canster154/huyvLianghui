@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>${site.name}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta name="uctk" content="enabled">
+    <link rel="shortcut icon" href="public/imgs/favicon.gif">
+    <link rel="stylesheet" href="public/dest/css/common_new.css" />
+    <link rel="stylesheet" type="text/css" href="public/dest/css/pc.css">
+    <link rel="stylesheet" type="text/css" href="public/dest/css/index_new.css">
+    <script src="public/dest/js/jquery1.42.min.js"></script>
+    <script src="public/dest/js/index_new.js"></script>
+    <style>
+      .fl{
+          float: left;
+      }
+      .fr{
+          float: right;
+      }
+      .clearfix:after{
+          content: "";
+          height: 0;
+          display: block;
+          clear: both;
+      }
+      .img100{
+          width: 100%;
+          height: 100%;
+      }
+      .bgBox, .theNum, .theRefer, .theTitle, .theScarf{
+          opacity: 0;
+      }
+      .bgBox{
+          background: url(${site.url}2020lianghui/imgs/headBgL.png) no-repeat;
+          background-size: 1920px auto;
+          background-position: center top;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: -1;
+      }
+      .bgBox~*{
+          opacity: 0;
+      }
+      .headBox .name{
+          width: 363px;
+          margin: 0 auto;
+          padding: 42px 0 10px;
+      }
+      .headBox .name .theNum{
+          width: 132px;
+          height: 64px;
+      }
+      .headBox .name p{
+        display: inline-block;width: 211px;
+        height: 43px;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 1px;
+          color: #e60012;
+          padding: 10px;
+      }
+      .headBox .title{
+          display: block;
+          position: relative;
+          margin-bottom: 40px;
+      }
+      .headBox .title .theTitle{
+          display: block;
+        width: 812px;
+        height: 200px;
+          margin: 0 auto;
+          position: relative;
+          z-index: 2;
+      }
+      .headBox .title .theScarf{
+        top: -134px;
+        width: 100%;
+        height: 388px;
+        position: absolute;
+        z-index: 1;
+        background: url(${site.url}2020lianghui/imgs/piaohong.png) no-repeat center top;
+        background-size: 1920px 388px;
+      }
+
+
+      body{
+          background: transparent;
+          position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="headBox">
+        <div class="name clearfix container">
+            <img class="fl theNum" src="2020lianghui/imgs/huizhang.png">
+            <p class="fl theRefer">十三届全国人大三次会议全国政协十三届三次会议</p>
+        </div>
+        <a class="title" href="http://www.xjtvs.com.cn/hy/zt2020/2020lhzt/index.shtml">
+            <img class="img100 theTitle" src="2020lianghui/imgs/title.png" alt="">
+            <div class="theScarf"></div>
+        </a>
+    </div>
+    <div class="bgBox">
+    </div>
+    <!--header-->
+    
+    <!--main-->
+    <div class="main">
+      <cms:include file="include/head1.html"></cms:include>
+      <div class="main_white">
+        <!--headline color: #FF0000;-->
+        <div class="headline">
+          <div class="heaedline-title">
+            <h1>
+              <cms:list item="Article" name="1635" count="1" begin="0">
+                <a href='${Article.link}' target='_blank' title="${Article.title}" style="text-align:center;">${Article.title}</a>
+              </cms:list>
+              </h1>
+          </div>
+          <div class="heaedline-text"> </div>
+        </div>
+        <!--banner-->
+        <div class="banner">
+          <div class="banner-left">
+            <ul class='pic-ul'>
+              <cms:list item="Article" name="3263" count="4">
+                <li class='pic-li'><a href='${Article.link}' target='_blank'><img src='${level}${Article.logo}'/></a></li>
+              </cms:list>
+            </ul>    
+            <div class='mask'>
+              <ul class='text-ul'>
+                <cms:list item="Article" name="3263" count="4">
+                  <li class='text-li'><a href='${Article.link}'  title="${Article.title}">${Article.title|charWidth=30}</a></li>
+                </cms:list>
+              </ul>
+              <ul class='btn-ul'>
+                <li class='hover'></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>         
+          </div>
+          <div class="banner-right">
+            <div class="banner-r1 pull-left"> 
+              <a target="_blank" href="http://www.xjtvs.com.cn/hy/zb/index.shtml"><img src="public/dest/images/xjws1.png" style="width: 370px !important;height: 65px !important;" /></a> 
+            </div>
+            <div class="banner-r1 pull-left"> <a target="_blank" href="http://www.xjtvs.com.cn/hy/zb/26899086.shtml"><img src="public/dest/images/xjws2.png" /></a> </div>
+            <div class="banner-r2 pull-left"> <a target="_blank" href="http://www.xjtvs.com.cn/hy/zb/26899093.shtml"><img src="public/dest/images/xjws3.png" /></a> </div>
+            <div class="banner-r1 pull-left"> <a target="_blank" href="http://www.xjtvs.com.cn/hy/zb/26899095.shtml"><img src="public/dest/images/xjws4.png" /></a> </div>
+            <div class="banner-r2 pull-left"> <a target="_blank" href="http://www.xjtvs.com.cn/hy/zb/26899096.shtml"><img src="public/dest/images/xjws5.png" /></a> </div>
+            <div class="banner-r1 pull-left"> <a target="_blank" href="http://www.xjtvs.com.cn/hy/zb/26899098.shtml"><img src="public/dest/images/xjws7.png" /></a> </div>
+            <div class="banner-r2 pull-left"> <a target="_blank" href="http://www.xjtvs.com.cn/hy/zb/26899099.shtml"><img src="public/dest/images/xjws8.png" /></a> </div>
+            <div class="banner-r1 pull-left"> <a target="_blank" href="http://www.xjtvs.com.cn/hy/zb/26899100.shtml"><img src="public/dest/images/xjws9.png" /></a> </div>
+            <div class="banner-r2 pull-left"> <a target="_blank" href="http://www.xjtvs.com.cn/hy/zb/26899101.shtml"><img src="public/dest/images/xjws10.png" /></a> </div>
+            <div class="banner-r1 pull-left"> <a target="_blank" href="http://www.xjtvs.com.cn/hy/zb/26899102.shtml"><img src="public/dest/images/xjws11.png" /></a> </div>
+            <div class="banner-r2 pull-left"> <a target="_blank" href="http://www.xjtvs.com.cn/hy/zb/26899103.shtml"><img src="public/dest/images/xjws12.png" /></a> </div>
+          </div>
+        </div>
+        <!--maincenter-->
+        <div class="tit-img">
+          <cms:ad name="首页广告1" custom="false" size="1170*80" type="1"></cms:ad>
+        </div>
+
+        <div class="second-title">
+          <h2>
+            <cms:list item="Article" name="1635" count="1" begin='1'>
+              <a href='${Article.link}' target='_blank' title="${Article.title}">${Article.title|charWidth=45}</a>
+            </cms:list>
+          </h2>
+        </div>
+        <div class="yaowen">
+          <div class="yw-tit biaoti"> 
+            <cms:var type="catalog" name="4249">
+              <a target="_blank" href="${catalog.link}">要闻</a> 
+            </cms:var>
+          </div>
+          <div class="yw-left">
+            <ul class='new-ul m-t-16'>
+              <cms:list item="Article" name="1635" count="1" begin='2'>
+                <li><a class='tit-color' href='${Article.link}' target='_blank' title='${Article.title}'>${Article.title|charWidth=20}</a></li>
+              </cms:list>
+              <cms:list item="Article" name="1635" count="5" begin='3'>
+                <li><a href='${Article.link}' target='_blank' title='${Article.title}'>${Article.title|charWidth=20}</a></li>
+              </cms:list>
+            </ul>
+            <!--第二段-->
+            <ul class='new-ul'>
+              <cms:list item="Article" name="3497" count="1" begin='0'>
+                <li><a class='tit-color' href='${Article.link}' target='_blank' title='${Article.title}'>${Article.title|charWidth=20}</a></li>
+              </cms:list>
+              <cms:list item="Article" name="3497" count="5" begin='1'>
+                <li><a href='${Article.link}' target='_blank' title='${Article.title}'>${Article.title|charWidth=20}</a></li>
+              </cms:list>
+            </ul>
+            <!-- 第三段 -->
+            <ul class='new-ul'>
+              <cms:list item="Article" name="3497" count="1" begin='6'>
+                <li><a class='tit-color' href='${Article.link}' target='_blank' title='${Article.title}'>${Article.title|charWidth=20}</a></li>
+              </cms:list>
+              <cms:list item="Article" name="3497" count="5" begin='7'>
+                <li><a href='${Article.link}' target='_blank' title='${Article.title}'>${Article.title|charWidth=20}</a></li>
+              </cms:list>
+            </ul>
+          </div>
+          <div class="yw-right">
+            <cms:list item="Article" name="3263" count="3" begin="4">
+              <div class='yw-img'><a href='${Article.link}' target='_blank'><img src='${level}${Article.logo}'/></a><a class='news-mask' href='${Article.link} ' target='_blank' title="${Article.title}">${Article.title|charWidth=20}
+              </a></div>  
+            </cms:list>        
+          </div>
+        </div>
+        <div class="txj-content">
+          <div class="txj">
+            <div class="txj-tit biaoti"> 
+              <cms:var type="catalog" name="3261">
+                <a target="_blank" href="${catalog.link}">看新疆</a> 
+              </cms:var>
+            </div>
+            <div class="txj-text">
+              <ul class='new-ul m-t-32 new-icon'>
+                <cms:list item="Article" name="3261" count="1" begin='0'>
+                  <li><a class='tit-color' href='${Article.link}' target='_blank' title='${Article.title}'>${Article.title|charWidth=20}</a></li>
+                </cms:list>
+                <cms:list item="Article" name="3261" count="4" begin='1'>
+                  <li><a href='${Article.link}' target='_blank' title='${Article.title}'>${Article.title|charWidth=18}</a></li>
+                </cms:list>
+              </ul>
+              <!--第二段-->
+              <ul class='new-ul new-icon'>
+                <cms:list item="Article" name="3261" count="1" begin='5'>
+                  <li><a class='tit-color' href='${Article.link}' target='_blank' title='${Article.title}'>${Article.title|charWidth=20}</a></li>
+                </cms:list>
+                <cms:list item="Article" name="3261" count="4" begin='6'>
+                  <li><a href='${Article.link}' target='_blank' title='${Article.title}'>${Article.title|charWidth=18}</a></li>
+                </cms:list>
+              </ul>
+            </div>
+          </div>
+          <div class="jzfp">
+            <div class="jzfp-tit biaoti"> 
+              <cms:var type="catalog" name="3708">
+                <a target="_blank" href="${catalog.link}">热点</a> 
+              </cms:var>
+            </div>
+            <div class="jzfp-text">
+              <ul class='new-ul m-t-9 new-hot'>
+                <cms:list item="Article" name="3708" count="4">
+                  <li>
+                    <a class='tit-color' target='_blank' href='${Article.link}' title='${Article.title}'>
+                      <img src="${level}${Article.logo}">
+                    </a>
+                  </li>
+                </cms:list>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main_gray">
+        <div class="imgs">
+          <div class='imgs-two'>
+            <div class='xjh-imgtwo'>
+              <cms:ad name="首页广告2" custom="false" size="580*100" type="1"></cms:ad>
+            </div>
+            <div class='xjh-imgtwo no-margin-r'>
+              <cms:ad name="首页广告3" custom="false" size="580*100" type="1"></cms:ad>
+            </div>
+          </div>
+          <!--第二段-->
+          <div class='imgs-top'>
+            <div class='xjh-img'>
+              <cms:ad name="首页广告4" custom="false" size="285*100" type="1"></cms:ad>
+            </div>
+            <div class='xjh-img'>
+              <cms:ad name="首页广告5" custom="false" size="285*100" type="1"></cms:ad>
+            </div>
+            <div class='xjh-img'>
+              <cms:ad name="首页广告6" custom="false" size="285*100" type="1"></cms:ad>
+            </div>
+            <div class='xjh-img no-margin-r'>
+              <cms:ad name="首页广告7" custom="false" size="285*100" type="1"></cms:ad>
+            </div>
+          </div>
+          <div class='imgs-bottom'>
+            <div class='xjh-img'>
+              <cms:ad name="首页广告8" custom="false" size="285*100" type="1"></cms:ad>
+            </div>
+            <div class='xjh-img'>
+              <cms:ad name="首页广告9" custom="false" size="285*100" type="1"></cms:ad>
+            </div>
+            <div class='xjh-img'>
+              <cms:ad name="首页广告10" custom="false" size="285*100" type="1"></cms:ad>
+            </div>
+            <div class='xjh-img no-margin-r'>
+              <cms:ad name="首页广告11" custom="false" size="285*100" type="1"></cms:ad>
+            </div>
+          </div> 
+        </div>
+        <div class="border"></div>
+        <!-- 栏目 -->
+        <div class="main_center live">
+          <cms:var type='catalog' name="3265">
+            <div class="name_div">
+              <a href="${catalog.link}" class="lxj_title">栏目</a>
+              <a href="${catalog.link}" class="more">更多</a>
+            </div>
+          </cms:var>
+          <div class="f_content1">
+            <div class="jctj_div1">
+              <!--1-->  
+               <div class="news_main">
+                <cms:list  item="Article" name="3476" begin="3" count="1">
+                  <div class="news_img">
+                    <a href="${Article.link}" target="_blank">
+                      <img src="${level}${Article.logo}" class="top_img1">
+                      <img src="public/imgs/bg2.png" class="top_bg1">
+                      <span class="top_lx1"></span>
+                    </a>
+                    <a href="${Article.link}" target="_blank" class="top_title1" title="${Article.title}">
+                      ${Article.title|charWidth=20}
+                    </a>
+                  </div>
+                </cms:list>
+                <div class="news_list">
+                  <cms:list item="Article" name="110184" count="3">
+                    <div class="list_div">
+                      <a href="${Article.link}" class="list_title1" target="_blank" title="${Article.title}">${Article.title|charWidth=20}</a>
+                    </div>
+                  </cms:list>
+                </div>
+              </div>
+                <!--2-->
+                <div class="news_main">
+                <cms:list  item="Article" name="3476" begin="4" count="1">
+                  <div class="news_img">
+                    <a href="${Article.link}" target="_blank">
+                      <img src="${level}${Article.logo}" class="top_img1">
+                      <img src="public/imgs/bg2.png" class="top_bg1">
+                      <span class="top_lx1"></span>
+                    </a>
+                    <a href="${Article.link}" target="_blank" class="top_title1" title="${Article.title}">
+                      ${Article.title|charWidth=20}
+                    </a>
+                  </div>
+                </cms:list>
+                <div class="news_list">
+                  <cms:list item="Article" name="109781" count="3">
+                    <div class="list_div">
+                      <a href="${Article.link}" class="list_title1" target="_blank" title="${Article.title}">${Article.title|charWidth=20}</a>
+                    </div>
+                  </cms:list>
+                </div>
+              </div>
+                <!--3-->
+              <div class="news_main">
+                <cms:list  item="Article" name="3476" begin="0" count="1">
+                  <div class="news_img">
+                    <a href="${Article.link}" target="_blank">
+                      <img src="${level}${Article.logo}" class="top_img1">
+                      <img src="public/imgs/bg2.png" class="top_bg1">
+                      <span class="top_lx1"></span>
+                    </a>
+                    <a href="${Article.link}" target="_blank" class="top_title1" title="${Article.title}">
+                      ${Article.title|charWidth=20}
+                    </a>
+                  </div>
+                </cms:list>
+                <div class="news_list">
+                  <cms:list item="Article" name="111293" count="3">
+                    <div class="list_div">
+                      <a href="${Article.link}" class="list_title1" target="_blank" title="${Article.title}">${Article.title|charWidth=20}</a>
+                    </div>
+                  </cms:list>
+                </div>
+              </div>
+                <!--4-->
+              <div class="news_main">
+                <cms:list  item="Article" name="3476" begin="2" count="1">
+                  <div class="news_img">
+                    <a href="${Article.link}" target="_blank">
+                      <img src="${level}${Article.logo}" class="top_img1">
+                      <img src="public/imgs/bg2.png" class="top_bg1">
+                      <span class="top_lx1"></span>
+                    </a>
+                    <a href="${Article.link}" target="_blank" class="top_title1" title="${Article.title}">
+                      ${Article.title|charWidth=20}
+                    </a>
+                  </div>
+                </cms:list>
+                <div class="news_list">
+                  <cms:list item="Article" name="111298" count="3">
+                    <div class="list_div">
+                      <a href="${Article.link}" class="list_title1" target="_blank" title="${Article.title}">${Article.title|charWidth=20}</a>
+                    </div>
+                  </cms:list>
+                </div>
+              </div>
+                <!--5-->
+              <div class="news_main">
+                  <div class="news_img">
+                    <a href="http://www.xjtvs.com.cn/hy/lm/zfty/index.shtml" target="_blank">
+                      <img src="img/ex-1.jpg" class="top_img1">
+                      <img src="public/imgs/bg2.png" class="top_bg1">
+                      <span class="top_lx1"></span>
+                    </a>
+                    <a href="http://www.xjtvs.com.cn/hy/lm/zfty/index.shtml" target="_blank" class="top_title1" title="致富田园">
+                      致富田园
+                    </a>
+                  </div>
+                <div class="news_list">
+                  <cms:list item="Article" name="110218" count="3">
+                    <div class="list_div">
+                      <a href="${Article.link}" class="list_title1" target="_blank" title="${Article.title}">${Article.title|charWidth=20}</a>
+                    </div>
+                  </cms:list>
+                </div>
+              </div>
+                <!--6-->
+              <div class="news_main">
+                  <div class="news_img">
+                    <a href="http://www.xjtvs.com.cn/hy/lm/xjty/index.shtml" target="_blank">
+                      <img src="img/ex-2.jpg" class="top_img1">
+                      <img src="public/imgs/bg2.png" class="top_bg1">
+                      <span class="top_lx1"></span>
+                    </a>
+                    <a href="http://www.xjtvs.com.cn/hy/lm/xjty/index.shtml" target="_blank" class="top_title1" title="新疆体育">
+                      新疆体育
+                    </a>
+                  </div>
+                <div class="news_list">
+                  <cms:list item="Article" name="110247" count="3">
+                    <div class="list_div">
+                      <a href="${Article.link}" class="list_title1" target="_blank" title="${Article.title}">${Article.title|charWidth=20}</a>
+                    </div>
+                  </cms:list>
+                </div>
+              </div>
+
+              
+
+            </div>
+          </div>
+        </div>
+        <div class="border"></div>
+        <!-- 记录 -->
+        <div class="main_center live">
+
+          <cms:var type='catalog' name="4257">
+            <div class="name_div">
+              <a href="${catalog.link}" class="movie_title">纪录</a>
+              <a href="${catalog.link}" class="more">更多</a>
+            </div>
+          </cms:var>
+
+          <div class="f_content1">
+            <div class="jctj_div1">
+              <div class="news_main">
+                <cms:list item="Article" name="4257"  count="1" begin="0">
+                  <div class="news_img">
+                    <a href="${Article.link}" target="_blank">
+                      <img src="${level}${Article.logo}" class="top_img1">
+                      <img src="http://www.xjtvs.com.cn/public/imgs/bg2.png" class="top_bg1">
+                      <span class="top_lx1"></span>
+                    </a>
+                    <a href="${Article.link}" target="_blank" class="top_title1">
+                      ${Article.title|charWidth=20}
+                    </a>
+                  </div>
+                </cms:list>
+                <div class="news_list">
+                  <cms:list item="Article" name="4257" count="3" begin="1">
+                    <div class="list_div">
+                      <a href="${Article.link}" class="list_title1" target="_blank">${Article.title|charWidth=20}</a>
+                    </div>
+                  </cms:list>
+                </div>
+              </div>
+              <div class="news_main">
+                <cms:list item="Article" name="4257" count="1" begin="4">
+                  <div class="news_img">
+                    <a href="${Article.link}" target="_blank">
+                      <img src="${level}${Article.logo}" class="top_img1">
+                      <img src="http://www.xjtvs.com.cn/public/imgs/bg2.png" class="top_bg1">
+                      <span class="top_lx1"></span>
+                    </a>
+                    <a href="${Article.link}" target="_blank" class="top_title1">
+                      ${Article.title|charWidth=20}
+                    </a>
+                  </div>
+                </cms:list>
+                <div class="news_list">
+                  <cms:list item="Article" name="4257" count="3" begin="5">
+                    <div class="list_div">
+                      <a href="${Article.link}" class="list_title1" target="_blank">${Article.title|charWidth=20}</a>
+                    </div>
+                  </cms:list>
+                </div>
+              </div>
+              <div class="news_main">
+                <cms:list item="Article" name="4257" count="1" begin="8">
+                  <div class="news_img">
+                    <a href="${Article.link}" target="_blank">
+                      <img src="${level}${Article.logo}" class="top_img1">
+                      <img src="http://www.xjtvs.com.cn/public/imgs/bg2.png" class="top_bg1">
+                      <span class="top_lx1"></span>
+                    </a>
+                    <a href="${Article.link}" target="_blank" class="top_title1">
+                      ${Article.title|charWidth=20}
+                    </a>
+                  </div>
+                </cms:list>
+                <div class="news_list">
+                  <cms:list item="Article" name="4257" count="3" begin="9">
+                    <div class="list_div">
+                      <a href="${Article.link}" class="list_title1" target="_blank">${Article.title|charWidth=20}</a>
+                    </div>
+                  </cms:list>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="border"></div>
+        <!-- 美丽新疆 -->
+        <div class="main_center zhuchiren1">
+          <cms:var type='catalog' name="3478">
+            <div class="name_div">
+              <a href="${catalog.link}" class="zcr_title">美丽新疆</a>
+              <a href="http://www.xjtvs.com.cn/hy/zt2201710/xjsghdf/index.shtml " class="more">更多</a>
+            </div>
+          </cms:var>
+          <div class="f_content3">
+            <div class="jctj_div3">
+              <cms:list item="Article" name="3478" count="1" begin="0">
+                <a href="${Article.link}" target="_blank" class="live_div" title="${Article.title}">
+                  <img src="${level}${Article.logo}" alt="" class="movie_img">
+                </a>
+              </cms:list>
+
+              <div class="movie_main1">
+                <cms:list item="Article" name="3478" count="2" begin="1">
+                  <a href="${Article.link}" target="_blank" title="${Article.title}">
+                    <img src="${level}${Article.logo}">
+                  </a>
+                </cms:list>
+              </div>
+              <div class="movie_main1">
+                <cms:list item="Article" name="3478" count="2" begin="3">
+                  <a href="${Article.link}" target="_blank" title="${Article.title}">
+                    <img src="${level}${Article.logo}">
+                  </a>
+                </cms:list>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <cms:include file="include/footer2.html"></cms:include>
+    <div id="adsdown" style="display:none;"></div>
+    <div id="shadowjwzt"></div>
+    <div style="display:none;">
+      <IFRAME ID="iframeDownload" name="iframeDownload" FRAMEBORDER=0 SCROLLING=NO SRC=""></IFRAME>
+      <IFRAME ID="adFrameC" name="adFrameC" FRAMEBORDER=0 SCROLLING=NO SRC=""></IFRAME>
+      <IFRAME ID="adFrameB" name="adFrameB" FRAMEBORDER=0 SCROLLING=NO SRC=""></IFRAME>
+      <iframe id="con" name="con" FRAMEBORDER=0 SCROLLING=NO SRC=""></iframe>
+      <script src="https://s19.cnzz.com/z_stat.php?id=1262496474&amp;web_id=1262496474" language="JavaScript"></script>
+      <script src="${site.url}2020lianghui/js/max.js"></script>
+      <script src="${site.url}2020lianghui/js/use1.js"></script>
+    </div>
+    <style type="text/css">
+      #JWZT_playerframe{
+          z-index:110;
+          position:relative;
+      }
+      #shadowjwzt {
+        background:#000;
+        display:none;
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        z-index:100;
+        opacity:0.80;
+        filter: alpha(opacity = 80);
+        zoom:1;
+      }
+      .turnedOff {
+        background-position:0 -50px;
+      }
+    </style>
+    <script language="javascript" type="text/javascript">
+      try 
+      {
+          JWZT_init();
+      }
+      catch(e)
+      {
+      }
+      $("#shadowjwzt").css("height", $(document).height()).hide();
+    </script>
+</body>
+  <script>
+      $("pic-li").eq(0).show().siblings("li").hide();
+      $(".text-li").eq(0).show().siblings('li').hide();
+      var _index=0;
+      var dingShiQi = null;
+      function autoPlay(){
+          dingShiQi = setInterval(function(){
+              _index++;
+              if(_index<$(".pic-li").length){
+                  $(".pic-li").eq(_index).fadeIn(1000).siblings('li').hide();
+                  $(".text-li").eq(_index).fadeIn(1000).siblings('li').hide();
+                  $(".btn-ul li").eq(_index).addClass('hover').siblings('li').removeClass('hover');
+              }else{
+                  _index=-1;
+              }
+          },5000);
+      }
+      autoPlay();
+  </script>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?ec5a0e06eb9b11bcb7d6e3cf4b0aeea8";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</html>
