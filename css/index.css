@@ -415,8 +415,7 @@
 }
 .header .name{
 	width: 400px;
-	margin: 0 auto;
-	margin: 136px 0 10px;
+	margin: 136px auto 10px;
 }
 .header .name img{
 	width: 132px;
