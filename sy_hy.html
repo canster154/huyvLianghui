@@ -1,0 +1,1408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Pragma" contect="no-cache">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="all" />
+    <title>باس بەت</title>
+    <link href="public/dest/css/index.css" rel="stylesheet" type="text/css">
+    <link href="public/dest/css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/datouwang.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="public/imgs/favicon.gif">
+    <script type="text/javascript" src="js/koala.min.1.5.js"></script>
+    <script type="text/javascript" src="public/dest/js/jquery-min.js"></script>
+    <style>
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        .clearfix:after{
+            content: "";
+            height: 0;
+            display: block;
+            clear: both;
+        }
+        .img100{
+            width: 100%;
+            height: 100%;
+        }
+        .bgBox, .theNum, .theRefer, .theTitle, .theScarf{
+            opacity: 0;
+        }
+        .bgBox{
+            background: url(${site.url}2020lianghui/imgs/headBgL.png) no-repeat;
+            background-size: 1920px auto;
+            background-position: center top;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .bgBox~*{
+            opacity: 0;
+        }
+        .headBox .name{
+            width: 750px;
+            margin: 0 auto;
+            padding: 42px 0 10px;
+        }
+        .headBox .name .theNum{
+            width: 132px;
+            height: 64px;
+        }
+        .headBox .name .theRefer{
+          width: 468px;
+          height: 43px;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 1px;
+            color: #e60012;
+            padding: 10px;
+        }
+        .headBox .title{
+            display: block;
+            position: relative;
+            margin-bottom: 40px;
+        }
+        .headBox .title .theTitle{
+            display: block;
+          width: 934px;
+          height: 184px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        .headBox .title .theScarf{
+          top: -134px;
+          width: 100%;
+          height: 388px;
+          position: absolute;
+          z-index: 1;
+          background: url(${site.url}2020lianghui/imgs/phsy_hy.png) no-repeat center top;
+          background-size: 1920px 388px;
+        }
+  
+  
+        body{
+            background: transparent;
+            position: relative;
+        }
+      </style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ec5a0e06eb9b11bcb7d6e3cf4b0aeea8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+<!--<body>-->
+<cms:include file="include/head_lh.html"></cms:include>
+<div class="main index_bg">
+<a href="javascript:void(0)" target="_blank" class="top_link"></a>
+<div class="main_center top_news">
+    <cms:list  item="Article" name="4832" count="1">
+        <div class="top_right">
+            <a href="${Article.link}" target="_blank" >
+                <img src="${level}${Article.logo}" alt="" class="top_img"/>
+                <img src="public/imgs/big_bg2.png" alt="" class="top_bg"/>
+            <span class="top_lx">
+           </span>
+                <a href="${Article.link}" target="_blank"  class="top_title">${Article.title}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="top_left">
+        <cms:list  item="Article" name="4832" begin="1" count="9">
+            <div class="top_simg">
+                <a href="${Article.link}" target="_blank" >
+                    <img src="${level}${Article.logo}" alt="" class="list_img1"/>
+                </a>
+                <a href="${Article.link}" target="_blank"  class="list1_title1">${Article.title|charwidth=33}</a>
+            </div>
+        </cms:list>
+    </div>
+</div>
+    <div class="main_center gg_div">
+<div class="gg_img1">
+                    <cms:ad name="首页A1" custom="false" size="395*130" type="1"> {ZCMS:} </cms:ad>
+</div>
+<div class="gg_img1">
+             <cms:ad name="首页A2" custom="false" size="395*130" type="1"> {ZCMS:} </cms:ad>
+</div>
+<div class="gg_img2">
+                    <cms:ad name="首页A3" custom="false" size="395*130" type="1"> {ZCMS:} </cms:ad>
+</div>
+    </div>
+<div class="main_center news">
+<cms:var type="catalog" item="catalog" name="4533">
+    <div class="name_div">
+        <a href="${catalog.link}" class="news_title">${catalog.hayu}</a>
+        <a href="${catalog.link}" class="more">جانەدە كوپ</a>
+    </div>
+</cms:var>
+<a href="javascript:void(0);" class="btn_l4"></a>
+<div class="f_content1">
+<div class="jctj_div1">
+<div class="news_main news_m">
+    <cms:list item="Article" name="4824" begin="0" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4824" begin="3" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4824" begin="1" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4824" begin="6" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4824" begin="2" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4824" begin="9" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4824" begin="12" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4824" begin="15" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4824" begin="13" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4824" begin="18" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4824" begin="14" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4824" begin="21" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4824" begin="24" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4824" begin="27" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4824" begin="25" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4824" begin="30" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4824" begin="26" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4824" begin="33" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+</div>
+</div>
+<a href="javascript:void(0);" class="btn_r4"></a>
+<div class="color_div3">
+    <span class="white1"></span>
+    <span class="white2"></span>
+    <span class="white3 blue"></span>
+</div>
+</div>
+<div class="main_center news" style="display:none">
+    <cms:var type="catalog" item="catalog" name="4537">
+        <div class="name_div">
+            <a href="${catalog.link}" class="zongyi_title">${catalog.hayu}</a>
+            <a href="${catalog.link}" class="more">جانەدە كوپ</a>
+        </div>
+    </cms:var>
+    <a href="javascript:void(0);" class="btn_l5"></a>
+    <div class="f_content1">
+<div class="jctj_div1">
+<div class="news_main news_m">
+    <cms:list item="Article" name="4825" begin="0" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4825" begin="3" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4825" begin="1" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4825" begin="6" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4825" begin="2" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4825" begin="9" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4825" begin="12" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4825" begin="15" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4825" begin="13" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4825" begin="18" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4825" begin="14" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4825" begin="21" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4825" begin="24" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4825" begin="27" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4825" begin="25" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4825" begin="30" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4825" begin="26" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4825" begin="33" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+</div>
+    </div>
+    <a href="javascript:void(0);" class="btn_r5"></a>
+    <div class="color_div3">
+        <span class="white1"></span>
+        <span class="white2"></span>
+        <span class="white3 blue"></span>
+    </div>
+</div>
+<!-- <div class="main_center gg_div">
+<div class="gg_img1">
+                    <cms:ad name="系列连环画" custom="false" size="800*130" type="1"> {ZCMS:} </cms:ad>
+</div>
+<div class="gg_img2">
+                    <cms:ad name="虎鱼宝贝" custom="false" size="395*130" type="1"> {ZCMS:} </cms:ad>
+</div> -->
+</div>
+<div class="main_center live">
+    <cms:var type="catalog" item="catalog" name="4926">
+        <div class="name_div">
+            <a href="${catalog.link}" class="lxj_title">${catalog.hayu}</a>
+            <a href="${catalog.link}" class="more">جانەدە كوپ</a>
+        </div>
+    </cms:var>
+    <a href="javascript:void(0);" class="btn_l6"></a>
+    <div class="f_content1">
+        <div class="jctj_div1">
+            <cms:list item="Article" name="4826" count="1">
+                <div class="live_div">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="movie_img"/>
+                    </a>
+                    <img src="public/imgs/lxj_bg.png" alt="" class="lxj_bg1"/>
+                    <a href="${Article.link}" class="lxj_title1">${Article.title|charwidth=40}</a>
+                </div>
+            </cms:list>
+            <div class="movie_main1">
+                <cms:list item="Article" name="4826" begin="1" count="2">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="live_img2"/>
+                    </a>
+                    <a href="${Article.link}" class="live_name1">${Article.title|charwidth=30}</a>
+                </cms:list>
+            </div>
+            <div class="movie_main1">
+                <cms:list item="Article" name="4826" begin="3" count="2">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="live_img2"/>
+                    </a>
+                    <a href="${Article.link}" class="live_name1">${Article.title|charwidth=30}</a>
+                </cms:list>
+            </div>
+            <div class="movie_main1">
+                <cms:list item="Article" name="4826" begin="5" count="2">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="live_img2"/>
+                    </a>
+                    <a href="${Article.link}" class="live_name1">${Article.title|charwidth=40}</a>
+                </cms:list>
+            </div>
+            <div class="movie_main1">
+                <cms:list item="Article" name="4826" begin="7" count="2">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="live_img2"/>
+                    </a>
+                    <a href="${Article.link}" class="live_name1">${Article.title|charwidth=40}</a>
+                </cms:list>
+            </div>
+            <div class="movie_main1">
+                <cms:list item="Article" name="4826" begin="9" count="2">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="live_img2"/>
+                    </a>
+                    <a href="${Article.link}" class="live_name1">${Article.title|charwidth=40}</a>
+                </cms:list>
+            </div>
+            <div class="movie_main1">
+                <cms:list item="Article" name="4826" begin="11" count="2">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="live_img2"/>
+                    </a>
+                    <a href="${Article.link}" class="live_name1">${Article.title|charwidth=40}</a>
+                </cms:list>
+            </div>
+            <div class="movie_main1">
+                <cms:list item="Article" name="4826" begin="13" count="2">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="live_img2"/>
+                    </a>
+                    <a href="${Article.link}" class="live_name1">${Article.title|charwidth=40}</a>
+                </cms:list>
+            </div>
+            <div class="movie_main1">
+                <cms:list item="Article" name="4826" begin="15" count="2">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="live_img2"/>
+                    </a>
+                    <a href="${Article.link}" class="live_name1">${Article.title|charwidth=40}</a>
+                </cms:list>
+            </div>
+            <div class="movie_main1">
+                <cms:list item="Article" name="4826" begin="17" count="2">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="live_img2"/>
+                    </a>
+                    <a href="${Article.link}" class="live_name1">${Article.title|charwidth=40}</a>
+                </cms:list>
+            </div>
+            <div class="movie_main1">
+                <cms:list item="Article" name="4826" begin="19" count="2">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="live_img2"/>
+                    </a>
+                    <a href="${Article.link}" class="live_name1">${Article.title|charwidth=40}</a>
+                </cms:list>
+            </div>
+            <div class="movie_main1">
+                <cms:list item="Article" name="4826" begin="21" count="2">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="live_img2"/>
+                    </a>
+                    <a href="${Article.link}" class="live_name1">${Article.title|charwidth=40}</a>
+                </cms:list>
+            </div>
+            <div class="movie_main1">
+                <cms:list item="Article" name="4826" begin="23" count="2">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="live_img2"/>
+                    </a>
+                    <a href="${Article.link}" class="live_name1">${Article.title|charwidth=40}</a>
+                </cms:list>
+            </div>
+            <div class="movie_main1">
+                <cms:list item="Article" name="4826" begin="25" count="2">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="live_img2"/>
+                    </a>
+                    <a href="${Article.link}" class="live_name1">${Article.title|charwidth=40}</a>
+                </cms:list>
+            </div>
+            <div class="movie_main1">
+                <cms:list item="Article" name="4826" begin="27" count="2">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="live_img2"/>
+                    </a>
+                    <a href="${Article.link}" class="live_name1">${Article.title|charwidth=40}</a>
+                </cms:list>
+            </div>
+            <div class="movie_main1">
+                <cms:list item="Article" name="4826" begin="29" count="2">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="live_img2"/>
+                    </a>
+                    <a href="${Article.link}" class="live_name1">${Article.title|charwidth=40}</a>
+                </cms:list>
+            </div>
+            <div class="movie_main1">
+                <cms:list item="Article" name="4826" begin="31" count="2">
+                    <a href="${Article.link}">
+                        <img src="${level}${Article.logo}" alt="" class="live_img2"/>
+                    </a>
+                    <a href="${Article.link}" class="live_name1">${Article.title|charwidth=40}</a>
+                </cms:list>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="btn_r6"></a>
+    <div class="color_div3">
+        <span class="white1"></span>
+        <span class="white2"></span>
+        <span class="white3 blue"></span>
+    </div>
+</div>
+<div class="main_center live" style="display:none">
+    <cms:var type="catalog" item="catalog" name="4541">
+        <div class="name_div">
+            <a href="${catalog.link}" class="live_title">${catalog.hayu}</a>
+            <a href="${catalog.link}" class="more">جانەدە كوپ</a>
+        </div>
+    </cms:var>
+    <a href="javascript:void(0);" class="btn_l7"></a>
+    <div class="f_content1">
+        <div class="jctj_div1">
+            <cms:list item="Article" name="4827" begin="0" count="1">
+                <div class="live_div">
+                    <a href="${Article.link}" target="_blank">
+                        <img src="${level}${Article.logo}" alt="" class="movie_img" />
+                        <img src="public/imgs/lxj_bg.png" alt="" class="lxj_bg1" />
+                    </a>
+                    <a href="${Article.link}" target="_blank" class="lxj_title1">${Article.title|charwidth=35}</a>
+                </div>
+            </cms:list>
+            <cms:list item="Article" name="4827" begin="1" count="16">
+                <div class="movie_main">
+                    <div class="live_img">
+                        <a href="${Article.link}">
+                            <img src="${level}${Article.logo}" alt="" class="live_img1"/>
+                        </a>
+                    </div>
+                    <a href="${Article.link}" class="live_name2">${Article.title|charwidth=65}</a>
+                </div>
+            </cms:list>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="btn_r7"></a>
+    <div class="color_div3">
+        <span class="white1"></span>
+        <span class="white2"></span>
+        <span class="white3 blue"></span>
+    </div>
+</div>
+<div class="main_center live1" style="display:none">
+    <cms:var type="catalog" item="catalog" name="4538">
+        <div class="name_div">
+            <a href="${catalog.link}" class="movie_title">${catalog.hayu}</a>
+            <a href="${catalog.link}" class="more">جانەدە كوپ</a>
+        </div>
+    </cms:var>
+    <a href="javascript:void(0);" class="btn_l2"></a>
+    <div class="f_content1">
+        <div class="jctj_div1">
+            <cms:list item="Article" name="4828" begin="0" count="18">
+                <div class="movie_main">
+                    <div class="live_img">
+                        <a href="${Article.link}" target="_blank">
+                            <img src="${level}${Article.logo}" alt="" class="live_img1"/>
+                            <img src="public/imgs/bg2.png" alt="" class="live_bg"/>
+                        </a>
+                        <a href="${Article.link}" class="live_name" target="_blank">${Article.title|charwidth=35}</a>
+                    </div>
+                </div>
+            </cms:list>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="btn_r2"></a>
+    <div class="color_div4">
+        <span class="white1"></span>
+        <span class="white2"></span>
+        <span class="white3 blue"></span>
+    </div>
+</div>
+<div class="main_center  zhuchiren1" style="display:none">
+    <cms:var type="catalog" item="catalog" name="4539">
+        <div class="name_div">
+            <a href="${catalog.link}" class="lxj_title">${catalog.hayu}</a>
+            <a href="${catalog.link}" class="more">جانەدە كوپ</a>
+        </div>
+    </cms:var>
+    <a href="javascript:void(0);" class="btn_l9"></a>
+    <div class="f_content2">
+        <div class="jctj_div2">
+            <cms:list item="Article" name="4829" begin="0" count="15">
+                <div class="zcr_main1">
+                    <div class="zcr_img2">
+                        <a href="${Article.link}">
+                            <img src="${level}${Article.logo}" alt="" class="zcr_img3"/>
+                        </a>
+                        <a href="${Article.link}" class="zcr_name" target="_blank">${Article.title|charwidth=35}</a>
+                    </div>
+                </div>
+            </cms:list>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="btn_r9"></a>
+    <div class="color_div5">
+        <span class="white1"></span>
+        <span class="white2"></span>
+        <span class="white3 blue"></span>
+    </div>
+</div>
+<div class="main_center  zhuchiren" style="display:none">
+    <cms:var type="catalog" item="catalog" name="4540">
+        <div class="name_div">
+            <a href="${catalog.link}" class="zcr_title">${catalog.hayu}</a>
+            <a href="${catalog.link}" class="more">جانەدە كوپ</a>
+        </div>
+    </cms:var>
+    <a href="javascript:void(0);" class="btn_l3"></a>
+    <div class="f_content2">
+        <div class="jctj_div2">
+            <cms:list item="Article" name="4830" begin="0" count="18">
+                <div class="zcr_main">
+                    <div class="zcr_img">
+                        <a href="${Article.link}">
+                            <img src="${level}${Article.logo}" alt="" class="zcr_img1"/>
+                        </a>
+                        <a href="${Article.link}" class="zcr_name" target="_blank">${Article.title|charwidth=50}</a>
+                    </div>
+                </div>
+            </cms:list>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="btn_r3"></a>
+    <div class="color_div2">
+        <span class="white1"></span>
+        <span class="white2"></span>
+        <span class="white3 blue"></span>
+    </div>
+</div>
+<div class="main_center news" style="display:none">
+    <cms:var type="catalog" item="catalog" name="4543">
+        <div class="name_div">
+            <a href="${catalog.link}" class="zt_title">${catalog.hayu}</a>
+            <a href="${catalog.link}" class="more">جانەدە كوپ</a>
+        </div>
+    </cms:var>
+    <a href="javascript:void(0);" class="btn_l8"></a>
+    <div class="f_content1">
+<div class="jctj_div1">
+<div class="news_main news_m">
+    <cms:list item="Article" name="4831" begin="0" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4831" begin="3" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4831" begin="1" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4831" begin="6" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4831" begin="2" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4831" begin="9" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4831" begin="12" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4831" begin="15" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4831" begin="13" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4831" begin="18" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4831" begin="14" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4831" begin="21" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4831" begin="24" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4831" begin="27" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4831" begin="25" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4831" begin="30" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+<div class="news_main news_m">
+    <cms:list item="Article" name="4831" begin="26" count="1">
+        <div class="news_img">
+            <a href="${Article.link}" target="_blank">
+                <img src="${level}${Article.logo}" alt="" class="top_img1" />
+                <img src="public/imgs/bg2.png" alt="" class="top_bg1" />
+                <a href="${Article.link}" target="_blank" class="top_title1">${Article.title|charwidth=45}</a>
+            </a>
+        </div>
+    </cms:list>
+    <div class="news_list">
+        <cms:list item="Article" name="4831" begin="33" count="3">
+     <div class="list_div"> 
+      <a href="${Article.link}" target="_blank" class="list_title1">${Article.title|charwidth=55} </a> 
+      <span class="list_date">${Article.PublishDate|Format=yyyy-MM-dd}</span> 
+     </div> 
+        </cms:list>
+    </div>
+</div>
+</div>
+    </div>
+    <a href="javascript:void(0);" class="btn_r8"></a>
+    <div class="color_div3">
+        <span class="white1"></span>
+        <span class="white2"></span>
+        <span class="white3 blue"></span>
+    </div>
+</div>
+</div>
+<cms:include file="include/footer.html"></cms:include>
+<script>
+window.onscroll=function(){
+    var tt = document.documentElement.scrollTop || document.body.scrollTop;
+    if(tt>=400){
+        $(".tool").addClass("wei");
+        $(".menu").addClass("wei1");
+    }
+    else{
+        $(".tool").removeClass("wei");
+        $(".menu").removeClass("wei1");
+    }
+}
+var j=1;
+$(".btn_r2").click(function(){
+    if(j==1){
+        $(this).prev().children(".jctj_div1").animate({right: '-1206px'}, "slow");
+        $(this).next().children(".white2").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white1").removeClass("blue");
+        j=2;
+    }
+    else if(j==2){
+        $(this).prev().children(".jctj_div1").animate({right: '-2435px'}, "800");
+        $(this).next().children(".white1").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white2").removeClass("blue");
+        j=3;
+    } else if(j==4){
+        $(this).prev().children(".jctj_div1").animate({right: '-2435px'}, "800");
+        $(this).next().children(".white1").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white2").removeClass("blue");
+        j=3;
+    }
+});
+$(".btn_l2").click(function(){
+    if(j==4) {
+        $(this).next().children(".jctj_div1").animate({right: '0px'}, "slow");
+        $(this).next().next().next().children(".white3").addClass("blue");
+        $(this).next().next().next().children(".white2").removeClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        j=1;
+    }
+    else if(j==3) {
+        $(this).next().children(".jctj_div1").animate({right: '-1206px'}, "slow");
+        $(this).next().next().next().children(".white2").addClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        $(this).next().next().next().children(".white3").removeClass("blue");
+        j=4;
+    }
+    else if(j==2){
+        $(this).next().children(".jctj_div1").animate({right: '0px'}, "slow");
+        $(this).next().next().next().children(".white3").addClass("blue");
+        $(this).next().next().next().children(".white2").removeClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        j=1;
+    }
+});
+var jj=1;
+$(".btn_r3").click(function(){
+    if(jj==1){
+        $(this).prev().children(".jctj_div2").animate({right: '-1206px'}, "slow");
+        $(this).next().children(".white2").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white1").removeClass("blue");
+        jj=2;
+    }
+    else if(jj==2){
+        $(this).prev().children(".jctj_div2").animate({right: '-2435px'}, "800");
+        $(this).next().children(".white1").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white2").removeClass("blue");
+        jj=3;
+    } else if(jj==4){
+        $(this).prev().children(".jctj_div2").animate({right: '-2435px'}, "800");
+        $(this).next().children(".white1").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white2").removeClass("blue");
+        jj=3;
+    }
+});
+$(".btn_l3").click(function(){
+    if(jj==4) {
+        $(this).next().children(".jctj_div2").animate({right: '0px'}, "slow");
+        $(this).next().next().next().children(".white3").addClass("blue");
+        $(this).next().next().next().children(".white2").removeClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        jj=1;
+    }
+    else if(jj==3) {
+        $(this).next().children(".jctj_div2").animate({right: '-1206px'}, "slow");
+        $(this).next().next().next().children(".white2").addClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        $(this).next().next().next().children(".white3").removeClass("blue");
+        jj=4;
+    }
+    else if(jj==2){
+        $(this).next().children(".jctj_div2").animate({right: '0px'}, "slow");
+        $(this).next().next().next().children(".white3").addClass("blue");
+        $(this).next().next().next().children(".white2").removeClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        jj=1;
+    }
+});
+var jjj=1;
+$(".btn_r4").click(function(){
+    if(jjj==1){
+        $(this).prev().children(".jctj_div1").animate({right: '-1206px'}, "slow");
+        $(this).next().children(".white2").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white1").removeClass("blue");
+        jjj=2;
+    }
+    else if(jjj==2){
+        $(this).prev().children(".jctj_div1").animate({right: '-2435px'}, "800");
+        $(this).next().children(".white1").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white2").removeClass("blue");
+        jjj=3;
+    } else if(jjj==4){
+        $(this).prev().children(".jctj_div1").animate({right: '-2435px'}, "800");
+        $(this).next().children(".white1").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white2").removeClass("blue");
+        jjj=3;
+    }
+});
+$(".btn_l4").click(function(){
+    if(jjj==4) {
+        $(this).next().children(".jctj_div1").animate({right: '0px'}, "slow");
+        $(this).next().next().next().children(".white3").addClass("blue");
+        $(this).next().next().next().children(".white2").removeClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        jjj=1;
+    }
+    else if(jjj==3) {
+        $(this).next().children(".jctj_div1").animate({right: '-1206px'}, "slow");
+        $(this).next().next().next().children(".white2").addClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        $(this).next().next().next().children(".white3").removeClass("blue");
+        jjj=4;
+    }
+    else if(jjj==2){
+        $(this).next().children(".jctj_div1").animate({right: '0px'}, "slow");
+        $(this).next().next().next().children(".white3").addClass("blue");
+        $(this).next().next().next().children(".white2").removeClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        jjj=1;
+    }
+});
+var jjjj=1;
+$(".btn_r5").click(function(){
+    if(jjjj==1){
+        $(this).prev().children(".jctj_div1").animate({right: '-1206px'}, "slow");
+        $(this).next().children(".white2").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white1").removeClass("blue");
+        jjjj=2;
+    }
+    else if(jjjj==2){
+        $(this).prev().children(".jctj_div1").animate({right: '-2435px'}, "800");
+        $(this).next().children(".white1").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white2").removeClass("blue");
+        jjjj=3;
+    } else if(jjjj==4){
+        $(this).prev().children(".jctj_div1").animate({right: '-2435px'}, "800");
+        $(this).next().children(".white1").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white2").removeClass("blue");
+        jjjj=3;
+    }
+});
+$(".btn_l5").click(function(){
+    if(jjjj==4) {
+        $(this).next().children(".jctj_div1").animate({right: '0px'}, "slow");
+        $(this).next().next().next().children(".white3").addClass("blue");
+        $(this).next().next().next().children(".white2").removeClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        jjjj=1;
+    }
+    else if(jjjj==3) {
+        $(this).next().children(".jctj_div1").animate({right: '-1206px'}, "slow");
+        $(this).next().next().next().children(".white2").addClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        $(this).next().next().next().children(".white3").removeClass("blue");
+        jjjj=4;
+    }
+    else if(jjjj==2){
+        $(this).next().children(".jctj_div1").animate({right: '0px'}, "slow");
+        $(this).next().next().next().children(".white3").addClass("blue");
+        $(this).next().next().next().children(".white2").removeClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        jjjj=1;
+    }
+});
+var jjjjj=1;
+$(".btn_r6").click(function(){
+    if(jjjjj==1){
+        $(this).prev().children(".jctj_div1").animate({right: '-1206px'}, "slow");
+        $(this).next().children(".white2").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white1").removeClass("blue");
+        jjjjj=2;
+    }
+    else if(jjjjj==2){
+        $(this).prev().children(".jctj_div1").animate({right: '-2435px'}, "800");
+        $(this).next().children(".white1").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white2").removeClass("blue");
+        jjjjj=3;
+    } else if(jjjjj==4){
+        $(this).prev().children(".jctj_div1").animate({right: '-2435px'}, "800");
+        $(this).next().children(".white1").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white2").removeClass("blue");
+        jjjjj=3;
+    }
+});
+$(".btn_l6").click(function(){
+    if(jjjjj==4) {
+        $(this).next().children(".jctj_div1").animate({right: '0px'}, "slow");
+        $(this).next().next().next().children(".white3").addClass("blue");
+        $(this).next().next().next().children(".white2").removeClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        jjjjj=1;
+    }
+    else if(jjjjj==3) {
+        $(this).next().children(".jctj_div1").animate({right: '-1206px'}, "slow");
+        $(this).next().next().next().children(".white2").addClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        $(this).next().next().next().children(".white3").removeClass("blue");
+        jjjjj=4;
+    }
+    else if(jjjjj==2){
+        $(this).next().children(".jctj_div1").animate({right: '0px'}, "slow");
+        $(this).next().next().next().children(".white3").addClass("blue");
+        $(this).next().next().next().children(".white2").removeClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        jjjjj=1;
+    }
+});
+var jjjjjj=1;
+$(".btn_r7").click(function(){
+    if(jjjjjj==1){
+        $(this).prev().children(".jctj_div1").animate({right: '-1206px'}, "slow");
+        $(this).next().children(".white2").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white1").removeClass("blue");
+        jjjjjj=2;
+    }
+    else if(jjjjjj==2){
+        $(this).prev().children(".jctj_div1").animate({right: '-2435px'}, "800");
+        $(this).next().children(".white1").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white2").removeClass("blue");
+        jjjjjj=3;
+    } else if(jjjjjj==4){
+        $(this).prev().children(".jctj_div1").animate({right: '-2435px'}, "800");
+        $(this).next().children(".white1").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white2").removeClass("blue");
+        jjjjjj=3;
+    }
+});
+$(".btn_l7").click(function(){
+    if(jjjjjj==4) {
+        $(this).next().children(".jctj_div1").animate({right: '0px'}, "slow");
+        $(this).next().next().next().children(".white3").addClass("blue");
+        $(this).next().next().next().children(".white2").removeClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        jjjjjj=1;
+    }
+    else if(jjjjjj==3) {
+        $(this).next().children(".jctj_div1").animate({right: '-1206px'}, "slow");
+        $(this).next().next().next().children(".white2").addClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        $(this).next().next().next().children(".white3").removeClass("blue");
+        jjjjjj=4;
+    }
+    else if(jjjjjj==2){
+        $(this).next().children(".jctj_div1").animate({right: '0px'}, "slow");
+        $(this).next().next().next().children(".white3").addClass("blue");
+        $(this).next().next().next().children(".white2").removeClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        jjjjjj=1;
+    }
+});
+var jjjjjjj=1;
+$(".btn_r8").click(function(){
+    if(jjjjjjj==1){
+        $(this).prev().children(".jctj_div1").animate({right: '-1206px'}, "slow");
+        $(this).next().children(".white2").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white1").removeClass("blue");
+        jjjjjjj=2;
+    }
+    else if(jjjjjjj==2){
+        $(this).prev().children(".jctj_div1").animate({right: '-2435px'}, "800");
+        $(this).next().children(".white1").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white2").removeClass("blue");
+        jjjjjjj=3;
+    } else if(jjjjjjj==4){
+        $(this).prev().children(".jctj_div1").animate({right: '-2435px'}, "800");
+        $(this).next().children(".white1").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white2").removeClass("blue");
+        jjjjjjj=3;
+    }
+});
+$(".btn_l8").click(function(){
+    if(jjjjjjj==4) {
+        $(this).next().children(".jctj_div1").animate({right: '0px'}, "slow");
+        $(this).next().next().next().children(".white3").addClass("blue");
+        $(this).next().next().next().children(".white2").removeClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        jjjjjjj=1;
+    }
+    else if(jjjjjjj==3) {
+        $(this).next().children(".jctj_div1").animate({right: '-1206px'}, "slow");
+        $(this).next().next().next().children(".white2").addClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        $(this).next().next().next().children(".white3").removeClass("blue");
+        jjjjjjj=4;
+    }
+    else if(jjjjjjj==2){
+        $(this).next().children(".jctj_div1").animate({right: '0px'}, "slow");
+        $(this).next().next().next().children(".white3").addClass("blue");
+        $(this).next().next().next().children(".white2").removeClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        jjjjjjj=1;
+    }
+});
+var jjjjjjjj=1;
+$(".btn_r9").click(function(){
+    if(jjjjjjjj==1){
+        $(this).prev().children(".jctj_div2").animate({right: '-1206px'}, "slow");
+        $(this).next().children(".white2").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white1").removeClass("blue");
+        jjjjjjjj=2;
+    }
+    else if(jjjjjjjj==2){
+        $(this).prev().children(".jctj_div2").animate({right: '-2435px'}, "800");
+        $(this).next().children(".white1").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white2").removeClass("blue");
+        jjjjjjjj=3;
+    } else if(jjjjjjjj==4){
+        $(this).prev().children(".jctj_div2").animate({right: '-2435px'}, "800");
+        $(this).next().children(".white1").addClass("blue");
+        $(this).next().children(".white3").removeClass("blue");
+        $(this).next().children(".white2").removeClass("blue");
+        jjjjjjjj=3;
+    }
+});
+$(".btn_l9").click(function(){
+    if(jjjjjjjj==4) {
+        $(this).next().children(".jctj_div2").animate({right: '0px'}, "slow");
+        $(this).next().next().next().children(".white3").addClass("blue");
+        $(this).next().next().next().children(".white2").removeClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        jjjjjjjj=1;
+    }
+    else if(jjjjjjjj==3) {
+        $(this).next().children(".jctj_div2").animate({right: '-1206px'}, "slow");
+        $(this).next().next().next().children(".white2").addClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        $(this).next().next().next().children(".white3").removeClass("blue");
+        jjjjjjjj=4;
+    }
+    else if(jjjjjjjj==2){
+        $(this).next().children(".jctj_div2").animate({right: '0px'}, "slow");
+        $(this).next().next().next().children(".white3").addClass("blue");
+        $(this).next().next().next().children(".white2").removeClass("blue");
+        $(this).next().next().next().children(".white1").removeClass("blue");
+        jjjjjjjj=1;
+    }
+});
+</script>
+<script type="text/javascript">
+    Qfast.add('widgets', { path: "js/terminator2.2.min.js", type: "js", requires: ['fx'] });
+    Qfast(false, 'widgets', function () {
+        K.tabs({
+            id: 'fsD1',   //焦点图包裹id
+            conId: "D1pic1",  //** 大图域包裹id
+            tabId:"D1fBt",
+            tabTn:"a",
+            conCn: '.fcon', //** 大图域配置class
+            auto: 1,   //自动播放 1或0
+            effect: 'fade',   //效果配置
+            eType: 'click', //** 鼠标事件
+            pageBt:true,//是否有按钮切换页码
+            bns: ['.prev', '.next'],//** 前后按钮配置class
+            interval: 5000  //** 停顿时间
+        })
+    })
+</script>
+</body>
+</html>

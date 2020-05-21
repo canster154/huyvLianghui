@@ -414,16 +414,16 @@
 	overflow: hidden;
 }
 .header .name{
-	width: 400px;
-	margin: 136px auto 10px;
+	width: 760px;
+	margin: 136px auto 20px;
 }
-.header .name img{
+.header .name .theNum{
 	width: 132px;
 	height: 64px;
 }
-.header .name p{
+.header .name .theRefer{
 	display: inline-block;
-	width: 248px;
+	width: 478px;
 	height: 50px;
 	font-size: 21px;
 	line-height: 24px;
@@ -437,8 +437,8 @@
 }
 .header .title .theTitle{
 	display: block;
-	width: 885px;
-	height: 250px;
+	width: 910px;
+	height: 204px;
 	margin: 0 auto;
 	position: relative;
 	z-index: 2;
@@ -449,7 +449,7 @@
 	height: 400px;
 	position: absolute;
 	z-index: 1;
-	background: url(../imgs/piaohong.png) no-repeat center top;
+	background: url(../imgs/phsy_hy.png) no-repeat center top;
 	background-size: 1920px 400px;
 }
 /* 两会日程 */
@@ -477,20 +477,21 @@
 .dayList #mainSlide .nav .riliTitle{
 	width: 224px;
 	height: 94px;
-	background: url('../imgs/rc.png') no-repeat;
+	background: url('../imgs/rc_hy.png') no-repeat;
 	background-size: 100% 100%;
 	font-size: 35px;
 	line-height: 92px;
 	text-align: center;
 	letter-spacing: 1px;
 	color: #ffffff;
-	margin: -30px 150px 0 30px;
+	margin: -30px 30px 0 30px;
 }
 .dayList #mainSlide .nav .month{
 	font-size: 36px;
 	line-height: 95px;
 	letter-spacing: -2px;
 	color: #e60012;
+	padding: 0 40px 0 20px;
 }
 .dayList #mainSlide .hd{
 	width: 60%;
@@ -516,6 +517,7 @@
 }
 .dayList #mainSlide .hd .tempWrap{
 	margin-top: 6px;
+	direction: ltr;
 }
 .dayList #mainSlide .hd ul{
 	position: relative;
