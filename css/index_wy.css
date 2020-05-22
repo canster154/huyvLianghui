@@ -450,7 +450,7 @@
 	height: 400px;
 	position: absolute;
 	z-index: 1;
-	background: url(../imgs/phsy_hy.png) no-repeat center top;
+	background: url(../imgs/phsy_wy.png) no-repeat center top;
 	background-size: 1920px 400px;
 }
 /* 两会日程 */
@@ -478,7 +478,7 @@
 .dayList #mainSlide .nav .riliTitle{
 	width: 224px;
 	height: 94px;
-	background: url('../imgs/rc_hy.png') no-repeat;
+	background: url('../imgs/rc_wy.png') no-repeat;
 	background-size: 100% 100%;
 	font-size: 35px;
 	line-height: 92px;

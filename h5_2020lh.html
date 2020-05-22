@@ -1,0 +1,348 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="关键词" name="keywords">
+    <meta name="description" content="网站介绍">
+    <title>2020全国两会</title>
+    <link rel="shortcut icon" href="http://www.xjtvs.com.cn/public/imgs/favicon.gif">
+    <link href="publicSpecial/css/h5_2020lh.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://www.xjtvs.com.cn/public_2018/js/jquery-min.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 640) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    <!-- <div class="top"></div> -->
+    <img class="top" src="publicSpecial/imgs/banner2020.png">
+    <!-- 两会动态 -->
+    <div class="content">
+        <cms:var type="catalog" name="111726">
+            <div class="title">
+                <span>
+                    ${catalog.name}
+                </span>
+                <a href="${catalog.link}">
+                    更多
+                </a>
+            </div>
+        </cms:var>
+        <cms:list item="Article" name="111726" count="1">
+            <div class="newsListBig">
+                <a href="${Article.link}" class="href">
+                    ${Article.title}
+                </a>
+                <a href="${Article.link}">
+                    <img src="${level}${Article.logo}" alt="">
+                </a>
+            </div>
+        </cms:list>
+        <cms:list item="Article" name="111726" count="2" begin="1">
+            <div class="newsList">
+                <a href="${Article.link}">
+                    <img src="${level}${Article.logo}" alt="">
+                </a>
+                <a href="${Article.link}" class="href">
+                    ${Article.title}
+                </a>
+                <p>
+                    ${Article.publishDate}
+                </p>
+            </div>
+        </cms:list>
+    </div>
+    <!-- 向总书记报告 -->
+    <div class="content" id="one">
+        <cms:var type="catalog" name="111727">
+            <div class="title">
+                <span>
+                    ${catalog.name}
+                </span>
+                <a href="${catalog.link}">
+                    更多
+                </a>
+            </div>
+        </cms:var>
+        <cms:list item="Article" name="111727" count="6">
+            <div class="newsList1">
+                <a href="${Article.link}">
+                    <img src="${level}${Article.logo}" alt="">
+                </a>
+                <a href="${Article.link}" class="href">
+                    ${Article.title}
+                </a>
+
+            </div>
+        </cms:list>
+    </div>
+    <!-- 众志成城的力量-gg -->
+    <cms:var type="catalog" name="111729">
+        <a href="${catalog.link}">
+            <img src="publicSpecial/imgs/zzccdll.png" class="gg" alt="">
+        </a>
+    </cms:var>
+    <!-- 两会小课堂 -->
+    <div class="content" id="two">
+        <cms:var type="catalog" name="111736">
+            <div class="title">
+                <span>
+                    ${catalog.name}
+                </span>
+                <a href="${catalog.link}">
+                    更多
+                </a>
+            </div>
+        </cms:var>
+        <cms:list item="Article" name="111736" count="3">
+            <div class="newsList2">
+                <a href="${Article.link}">
+                    <img src="${level}${Article.logo}" class="img" alt="">
+                    <img src="publicSpecial/imgs/vIcon.png" class="img1" alt="">
+                </a>
+                <a href="${Article.link}" class="href">
+                    ${Article.title}
+                </a>
+                <p>
+                    <span>视频</span>
+                    ${Article.publishDate}
+                </p>
+            </div>
+        </cms:list>
+    </div>
+    <div class="bg"></div>
+
+    <!-- 两会云视角 -->
+    <div class="content" id="three">
+        <cms:var type="catalog" name="111728">
+            <div class="title">
+                <span>
+                    ${catalog.name}
+                </span>
+                <a href="${catalog.link}">
+                    更多
+                </a>
+            </div>
+        </cms:var>
+        <cms:list item="Article" name="111728" count="4">
+            <div class="newsList1">
+                <a href="${Article.link}">
+                    <img src="${level}${Article.logo}" alt="">
+                </a>
+                <a href="${Article.link}" class="href">
+                    ${Article.title}
+                </a>
+
+            </div>
+        </cms:list>
+    </div>
+    <!-- 两会云通道-gg -->
+    <cms:var type="catalog" name="111730">
+        <a href="${catalog.link}">
+            <img src="publicSpecial/imgs/lhytd.png" class="gg" alt="">
+        </a>
+    </cms:var>
+    <!-- 两会云观察 -->
+    <div class="content">
+        <cms:var type="catalog" name="111735">
+            <div class="title">
+                <span>
+                    ${catalog.name}
+                </span>
+                <a href="${catalog.link}">
+                    更多
+                </a>
+            </div>
+        </cms:var>
+        <cms:list item="Article" name="111735" count="4">
+            <div class="newsList1">
+                <a href="${Article.link}">
+                    <img src="${level}${Article.logo}" alt="">
+                </a>
+                <a href="${Article.link}" class="href">
+                    ${Article.title}
+                </a>
+
+            </div>
+        </cms:list>
+    </div>
+    <div class="bg"></div>
+
+    <!-- 两会话脱贫 -->
+    <div class="content" id="five">
+        <cms:var type="catalog" name="111731">
+            <div class="title">
+                <span>
+                    ${catalog.name}
+                </span>
+                <a href="${catalog.link}">
+                    更多
+                </a>
+            </div>
+        </cms:var>
+        <cms:list item="Article" name="111731" count="3">
+            <div class="newsList">
+                <a href="${Article.link}">
+                    <img src="${level}${Article.logo}" alt="">
+                </a>
+                <a href="${Article.link}" class="href">
+                    ${Article.title}
+                </a>
+                <p>
+                    ${Article.publishDate}
+                </p>
+            </div>
+        </cms:list>
+
+
+    </div>
+    <!-- 两会谈经济-gg -->
+    <cms:var type="catalog" name="111732">
+        <a href="${catalog.link}">
+            <img src="publicSpecial/imgs/lhtjj.png" class="gg" alt="">
+        </a>
+    </cms:var>
+    <!-- 两会说就业 -->
+    <div class="content" id="four">
+        <cms:var type="catalog" name="111733">
+            <div class="title">
+                <span>
+                    ${catalog.name}
+                </span>
+                <a href="${catalog.link}">
+                    更多
+                </a>
+            </div>
+        </cms:var>
+        <cms:list item="Article" name="111733" count="5">
+            <div class="newsList3">
+                <a href="${Article.link}" class="href">
+                    ${Article.title}
+                </a>
+                <p>
+                    <!-- <span>视频</span> -->
+                    ${Article.publishDate}
+                </p>
+            </div>
+        </cms:list>
+
+    </div>
+    <div class="bg"></div>
+    <div class="content">
+        <cms:list item="Article" count="20" name="111725" level="child">
+            <div class="newsList">
+                <a href="${Article.link}">
+                    <img src="${level}${Article.logo}" alt="">
+                </a>
+                <a href="${Article.link}" class="href">
+                    ${Article.title}
+                </a>
+                <p>
+                    ${Article.publishDate}
+                </p>
+            </div>
+        </cms:list>
+    </div>
+</body>
+<script>
+    $('.te').click(function () {
+        $(".content").animate({ scrollTop: 0 }, 1000);//导航图标跳转到制定栏目位置
+    });
+    var logo = 'http://www.xjtvs.com.cn/publicSpecial/imgs/banner2020.png';
+    var title = '决战决胜 追梦同行';
+    var summary = '新疆广播电视台2020年全国两会融媒体报道';
+    var url2 = encodeURIComponent(window.location.href);
+    var windowURL = window.location.href;
+    //微信自定义分享
+    wx_share(url2);
+    function wx_share() {
+        $.ajax({
+            url: "http://scmsxjtvs.sobeycloud.com/api/weixin/jstoken",
+            type: "GET",
+            data: "url=" + url2 + "&amp;siteId=34",
+            dataType: "json",
+            success: function (data) {
+                try {
+                    console.log(data);
+                    wx.config({
+                        debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                        appId: data.appId, // 必填，公众号的唯一标识
+                        timestamp: data.timestamp, // 必填，生成签名的时间戳
+                        nonceStr: data.noncestr, // 必填，生成签名的随机串
+                        signature: data.signature,// 必填，签名，见附录1
+                        jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+                    });
+                    wx.ready(function () {
+                        wx.checkJsApi({
+                            jsApiList: ["onMenuShareTimeline", "onMenuShareAppMessage"],
+                            success: function (res) {
+                                console.log(res);
+                            }
+                        });
+                        wx.onMenuShareTimeline({
+                            title: title, // 分享标题
+                            link: windowURL,
+                            imgUrl: logo, // 分享图标
+                            success: function () {
+                                // 用户确认分享后执行的回调函数
+                                console.log("分享成功");
+                            },
+                            cancel: function () {
+                                // 用户取消分享后执行的回调函数
+                                console.log("分享失败");
+                            }
+                        });
+                        wx.onMenuShareAppMessage({
+                            title: title, // 分享标题
+                            desc: summary, // 分享描述
+                            link: windowURL,
+                            imgUrl: logo, // 分享图标
+                            type: '', // 分享类型,music、video或link，不填默认为link
+                            dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+                            success: function () {
+                                // 用户确认分享后执行的回调函数
+                            },
+                            cancel: function () {
+                                // 用户取消分享后执行的回调函数
+                            }
+                        });
+                    });
+                    wx.error(function (res) {
+                        console.log(res);
+                    });
+
+                } catch (e) {
+                    console.log(e);
+                }
+            }, error: function (msg) {
+                console.log(msg);
+            }
+        });
+    }
+</script>
+
+</html>

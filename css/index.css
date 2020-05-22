@@ -76,12 +76,13 @@
 	margin-right: 30px;
 	width: 300px;
 }
-#item1 .tuwen li a{
+#item1 .tuwen li .preImg{
 	display: block;
 	width: 300px;
 	height: 190px;
 }
-#item1 .tuwen li p{
+#item1 .tuwen li .title{
+	display: block;
 	font-size: 18px;
 	line-height: 50px;
 	text-indent: 5px;

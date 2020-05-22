@@ -1,0 +1,23 @@
+html body {
+    margin: 0;
+    padding: 0;
+    font-family:Alpida Unicode System; font-weight:normal;
+}
+@font-face {
+    font-family:Alpida Unicode System; font-weight:normal;src:url('../../../wy/ziti/001.eot'); src : local( 'Alpida Unicode System' ), url(../../../wy/ziti/Alpida.TTF) format( "TrueType" );
+}
+body,h1,h2,h3,h4,h5,h6,p,form,ul,ol,li,input,select,label,dl,dt,dd {
+    margin: 0;
+    padding: 0;
+    font-family: Alpida Unicode System;
+    font-size: 15px;
+    color: #000;
+    -webkit-text-size-adjust: none;
+    text-align: right;
+}
+a{
+    text-decoration: none;
+    color: #291e15;
+    font-size: 14px;
+    direction: rtl;
+}
